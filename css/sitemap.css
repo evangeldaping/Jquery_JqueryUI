@@ -1,0 +1,138 @@
+/* body,html */
+
+body, html {
+  background-color: white;
+  margin: 0 auto;
+  height: 100%;   
+  width: 100%; 
+}
+/* end of body, html */
+
+/*--------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #57b846;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+
+/* sitemap */
+
+#header {
+  height: 200px;
+  width: 100%;
+  background-image:url(../images/sitemap.jpg);
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  padding-top: 30px;
+}
+
+.searchwrapper {
+    margin: 0 auto;
+  height: 80px;
+  width: 100%;
+  color: #777;
+  background: #009bff;
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -moz-linear-gradient(left, #0072ff, #00c6ff);
+  background: linear-gradient(left, #0072ff, #00c6ff);
+}
+
+.searchwrapper .button {
+  margin: 0 auto;
+}
+
+.sitemap ul {
+  margin-left: 100px;
+  list-style-type: square;
+}
+
+.sitemap ul {
+  margin-left: 100px;
+  list-style-type: square;
+}
+
+
+
+/* end of sitemap */
+
+#automplete-3 {
+    margin-left: 700px;
+    margin-top: 30px;
+}
+
+#btnid {
+    color: green; 
+    background-color: #e9e9cf; 
+    height: 25px; 
+    width: 100px; 
+    border-radius: 10px 10px 10px 10px;
+}

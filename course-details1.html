@@ -1,0 +1,1033 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Course Detail Page for Java where it shows the course content, requirements and description of the course.">
+
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/course-details1.css">
+    <link rel="stylesheet" href="css/course-schedule1.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css">
+    <!--end of external css-->
+    
+    <!--external jquery-->
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+    <!--internal CSS-->
+    <style>
+        #accordion-2{
+             font-size: 14px;
+             width: 1465px;
+             padding-left: 420px;
+          }
+    </style>
+      
+    <!-- jQuery-Javascript -->
+
+    <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"  
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    <!--for jqueryUI - Dialog-->
+    <script type = "text/javascript">
+        $(function() {
+
+            $("#toggle1").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+
+            $("#toggle2").click(function() {
+               ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+
+            $("#toggle3").click(function() {
+            ($("#register").dialog("isOpen") == false) ? $(
+               "#register").dialog("open") : $("#register").dialog("close") ;
+            });
+            $("#register").dialog({autoOpen: false});
+         });
+    </script>
+      
+    <!--for jqueryUI - Accordion--> 
+    <script>
+        $(function() {
+        $( "#accordion-2" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+    </head>
+  <body>
+          
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+          <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li class="see-all" ><a id = "toggle1" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>    
+                   
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>  
+  </header>
+
+  <main>
+    
+    <div class="java">    
+      <h2>Java Programming Masterclass for Software Developers</h2>
+      <br>
+    <p style="color: white; font-size: 20px;">Learn Java In This Course And Become a Computer Programmer.<br> Obtain valuable Core Java Skills And Java Certification.</p>                    
+    </div>  
+    <div class="what">    
+      <h1>What you'll learn</h1>
+      <br>
+        
+      <ul>
+          <li>
+              <h3>
+              Learn the core Java skills needed to apply for Java developer positions in just 14 hours.
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3 style="padding-bottom: 20px;">            
+              Be able to demonstrate your understanding of Java to future employers.
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3 style="padding-bottom: 32px;">            
+              Acquire essential java basics for transitioning to the Spring Framework, Java EE, Android development and more.
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>                  
+              Be able to sit for and pass the Oracle Java Certificate exam if you choose.
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>                 
+              Learn industry "best practices" in Java software development from a professional Java developer who has worked in the language for 18 years.
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>                  
+              Obtain proficiency in Java 8 and Java 11.
+              </h3>
+          </li>
+        </ul>
+    </div>
+      <br><br><br>
+      <div style="padding-left: 420px; font-size: 40px;" >Course Content</div>
+      <br>
+      <div id = "accordion-2">
+
+        LESSON 1
+
+         <h3>Course Introduction</h3>
+         <div>
+            <ol>
+               <li>Introduction to the Course</li>
+               <li>Remaster in Progress</li>
+               <li>Video Quality</li>
+               <li>Subtitles</li>
+               <li>How to get Help</li>
+               <li>Important Tip - Source Code</li>
+            </ol>
+         </div>
+         <h3>Software Tools Setup</h3>
+         <div>
+            <ol>
+               <li>Biggest tip to succeed as Java Programmer</li>
+               <li>Being persistent and the four stages of becoming a Programmer</li>
+               <li>Software Tools Introduction</li>
+               <li>Java Development Kit Installation Overview</li>
+               <li>Install JDK 11 for Windows</li>
+               <li>Install Intellij IDEA for Windows</li>
+               <li>Install JDK for Mac</li>
+               <li>Install Intellij IDEA for Mac</li>
+               <li>Install JDK for Linux</li>
+               <li>Install Intellij IDEA for Linux</li>
+               <li>Configure Intellj IDEA</li>
+            </ol>
+         </div>
+         <h3>First Steps</h3>
+         <div>
+            <ul>
+               <li>Introduction</li>
+               <li>Hello World Project</li>
+               <li>Defining the Main Method</li>
+               <li>Hello World Challenge and Common Errors</li>
+               <li>Variables</li>
+               <li>Starting out with Expressions</li>
+               <li>Primitive Types</li>
+               <li>byte, short, long and width</li>
+               <li>Casting in Java</li>
+               <li>Primitive Types Challenge</li>
+               <li>float and double Primitive Types</li>
+               <li>Floating Point Precision and a Challenge</li>
+               <li>The char and boolean Primitive Data Types</li>
+               <li>Primitive Types Recap and Expressions</li>
+               <li>Abbreviating Operators</li>
+               <li>if-then Statement</li>
+               <li>Logical and Operator</li>
+               <li>Logical OR Operator</li>
+               <li>Assignment Operator VS Equals to Operator</li>
+               <li>Ternary Operator</li>
+               <li>Operator Precedence and Operator Challenge</li>
+               <li>First Steps Summary</li>
+               <li>End of Remaster</li>
+            </ul>
+         </div>
+
+         LESSON 2
+
+          <h3>Java Tutorial: Expressions, Statements, Code blocks, Methods and more</h3>
+         <div>
+            <li>Introduction</li>
+              <li>Keywords And Expressions</li>
+              <li>Statments, Whitespace and Indentation(Code Organization)</li>
+              <li>Code Blocks And The If Then Else Control Statements</li>
+              <li>if then else Recap</li>
+              <li>Methods In Java</li>
+              <li>More On Methods And A Challenge</li>
+              <li>Method Challenge - Final Code Changes</li>
+              <li>DiffMerge Tool Introduction</li>
+              <li>Install DiffMerge</li>
+              <li>Using DiffMerge</li>
+              <li>Coding Exercises</li>
+              <li>Coding Exercises Example Part 1</li>
+              <li>Coding Exercises Example Part 2 </li>
+              <li>Coding Exercises Example Part 3</li>
+              <li>Speed Converter</li>
+              <li>MegaBytes Converter</li>
+              <li>Barking Dog</li>
+              <li>Leap Year Calculator</li>
+              <li>Decimal Comparator</li>
+              <li>Equal Sum Checker</li>
+              <li>Teen Number Checker</li>
+              <li>Method Overloading</li>
+              <li>Method OVerloading Recap</li>
+              <li>Seconds and Minute Challenge</li>
+              <li>Bonus Challenge Solution</li>
+              <li>Area Calculator</li>
+              <li>Minutes To Years and Days Caculator</li>
+              <li>Equaltity Printer</li>
+              <li>Playing Cat</li>
+         </div>
+          <h3>Control Flow Statements</h3>
+         <div>
+             <li>Introduction</li>
+             <li>The switch statement</li>
+             <li>Day of the Week Challenge</li>
+             <li>Number In Word</li>
+             <li>Number of Days In Month</li>
+             <li>The for Statement</li>
+             <li>For Loop Recap</li>
+             <li>Sum 3 and 5 Challenge</li>
+             <li>Sum Odd</li>
+             <li>The while and do while statements</li>
+             <li>While and Do While Recap</li>
+             <li>Digit Sum Challenge</li>
+             <li>Number Palindrome</li>
+             <li>First And Last Digit Sum</li>
+             <li>Even Digit Sum</li>
+             <li>Shared Digit</li>
+             <li>Last Digit Checker</li>
+             <li>Greatest Common Divisor</li>
+             <li>All Factors</li>
+             <li>Perfect Number</li>
+             <li>Number To Words</li>
+             <li>Parsing Values from a String</li>
+             <li>Flour Pack Problem</li>
+             <li>Largest Prime</li>
+             <li>Diagonal Star</li>
+             <li>Reading User Input</li>
+             <li>Problems and Solutions</li>
+             <li>Reading User Input Challenge</li>
+             <li>Min and Max Challenge</li>
+             <li>Input Calculator</li>
+             <li>Paint Job</li>
+         </div>
+
+         LESSON 3
+
+          <h3>OOP Part 1 - Classes, Constructors and Inheritance</h3>
+         <div>
+             <li>Introduction</li>
+             <li>Classes Part 1</li>
+             <li>Classes Part 2</li>
+             <li>Sum Calculator</li>
+             <li>Person</li>
+             <li>Constructors - Part 1</li>
+             <li>Constructors - Part 2</li>
+             <li>Wall Area</li>
+             <li>Point</li>
+             <li>Carpet Cost Calculator</li>
+             <li>Complex Operators</li>
+             <li>Inheritance - Part 1</li>
+             <li>Inheritance - Part 2</li>
+             <li>Reference vs Object vs Instance vs Class</li>
+             <li>this vs super</li>
+             <li>Method Overloading vs OVerriding Recap</li>
+             <li>Static vs Instance Methods</li>
+             <li>Static vs Instance Variables</li>
+             <li>Inheritance Challenge Part 1</li>
+             <li>Inheritance Challenge Part 2</li>
+             <li>Cylinder</li>
+             <li>Pool Area</li>
+         </div>
+          <h3>OOP Part 2 - Composition, Encapsulation, and Polymorphism</h3>
+         <div>
+             <li>Introduction</li>
+             <li>Composition</li>
+             <li>Composition Part 2</li>
+             <li>Encapsulation</li>
+             <li>Encapsulation Challenge</li>
+             <li>Polymorphism</li>
+             <li>Polymorphism Challenge</li>
+             <li>OOP Master Challenge Exercise</li>
+             <li>OOP Challenge Solution</li>
+         </div>
+
+         LESSON 4
+
+          <h3>Arrays, Java inbuilt Lists, Autoboxing and Unboxing</h3>
+         <div>
+           <li></li>
+             <li>Arrays</li>
+             <li>Array (Challenge Exercise)</li>
+             <li>Arrays Recap</li>
+             <li>Reference Types vs Values Types</li>
+             <li>Minimum Element Challenge</li>
+             <li>Reverse Array Challenge</li>
+             <li>List ArrayList Part 1</li>
+             <li>ArrayList Part 2</li>
+             <li>ArrayList Part 3</li>
+             <li>ArrayList Challenge Part 1</li>
+             <li>ArrayList Challenge Part 2</li>
+             <li>ArrayList Challenge Part 3</li>
+             <li>Bug Fix for ArrayList Challenge</li>
+             <li>Autoboxing and Unboxing</li>
+             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 1</li>
+             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 2</li>
+             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 3</li>
+             <li>LinkedList Part 1</li>
+             <li>LinkedList Part 2</li>
+             <li>LinkedList Part 3</li>
+             <li>LinkedList Challenge Part 1</li>
+             <li>Bug Fix for "Track 1" Error</li>
+             <li>LinkedList Challenge Part 2</li>
+             <li>LinkedList Challenge Part 3 (Final)</li>
+         </div>
+          <h3>Inner and Abstract Classes and Interfaces</h3>
+         <div>
+             <li>Interfaces</li>
+             <li>Interfaces Part 2</li>
+             <li>Interfaces Challenge Part 1</li>
+             <li>Interfaces Challenge Part 2</li>
+             <li>Inner Classes Part 1</li>
+             <li>Inner Classes Part 2</li>
+             <li>Inner Classes Challenge</li>
+             <li>Abstract Classes Part 1</li>
+             <li>Abstract Classes Part 2</li>
+             <li>Interfaces vs Abstract Class</li>
+             <li>Abstract Class Challenge Part 1</li>
+             <li>Abstract Class Challenge Part 2</li>
+             <li>Abstract Class Challenge Part 3 (includes recursion)</li>
+         </div>
+
+         LESSON 5
+
+         <h3>Java Generics</h3>
+         <div>
+             <li>Generics Introduction</li>
+             <li>Our Generics Class</li>
+             <li>Our Generics Class Part 2</li>
+             <li>Our Generics Class Part 3</li>
+             <li>Generics Challenge</li>
+         </div>
+          <h3>Naming Conventions and Packages, static and final keywords</h3>
+         <div>
+             <li>Naming Conventions</li>
+             <li>Packages</li>
+             <li>Packages Part 2</li>
+             <li>Packages Part 3</li>
+             <li>Packages (Challenge Exercise)</li>
+             <li>Scope</li>
+             <li>Scope Part 2 and Visibility</li>
+             <li>Scope (Challenge Exercise)</li>
+             <li>Access Modifiers</li>
+             <li>The static statement</li>
+             <li>The final statement</li>
+             <li>Final Part 2 and Static Initializers</li>
+         </div>
+          <h3>Java Collections</h3>
+         <div>
+             <li>Collections Overview</li>
+             <li>Binary Search</li>
+             <li>Collections List Methods</li>
+             <li>Comparable and Comparator</li>
+             <li>Maps</li>
+             <li>Map Continued and Adventure Game</li>
+             <li>Adding Exits to the Adventure Game</li>
+             <li>Adventure Game Challenge</li>
+             <li>Immutable Classes</li>
+             <li>Immutable Class Challenge</li>
+             <li>Sets And HashSet</li>
+             <li>HashSet - equals() and hashCode()</li>
+             <li>Finish Off equals() and hashCode()</li>
+             <li>Potential issue with equals() and sub-classing</li>
+             <li>Sets - Symmetric and Asymetric</li>
+             <li>Finishing OFF Sets</li>
+             <li>Sets Challenge Part 1</li>
+             <li>Sets Challenge Part 2</li>
+             <li>Sets Challenge Part 3</li>
+             <li>Sorted Collections</li>
+             <li>StockList Class With Maps</li>
+             <li>Add a Basket</li>
+             <li>TreeMap and Unmodifiable Maps</li>
+             <li>Challenge Part 1</li>
+             <li>Challenge Part 2</li>
+             <li>Challenge Part 3</li>
+             <li>Challenge Part 4 (Final)</li>
+         </div>
+
+         LESSON 6
+
+         <h3>JavaFX</h3>
+         <div>
+             <li>JDK11 Global Library Configuration</li>
+             <li>Create Your First JavaFX Project</li>
+             <li>JavaFX Overview</li>
+             <li>JavaFX Hello World Program</li>
+             <li>GridPane Layout</li>
+             <li>Hbox Layout</li>
+             <li>Border Pane Layout</li>
+             <li>Other Layouts</li>
+             <li>Controls</li>
+             <li>RadioButton and Checkbox</li>
+             <li>ComboBox and ChoiceBox</li>
+             <li>Slider, Spinner, ColorPicker and DatePicker Controls</li>
+             <li>TitledPane</li>
+             <li>Events and Event Handlers</li>
+             <li>Events Continued</li>
+             <li>UI Thread</li>
+             <li>Threads and Runnable</li>
+             <li>Setup Sample Todo List Application</li>
+             <li>Base Interface</li>
+             <li>Add Change Listener</li>
+             <li>Formatting Dates</li>
+             <li>Singletons</li>
+             <li>Load and Save ToDo Items from/to Disk</li>
+             <li>Add DialogPane</li>
+             <li>Show Dialog and Add Controller Code</li>
+             <li>Bug Fix and Update List View</li>
+             <li>Data Binding and Observable</li>
+             <li>Cell Factories</li>
+             <li>Context Menu</li>
+             <li>KeyEvents and Toolbars</li>
+             <li>SortedList</li>
+             <li>FilteredList</li>
+             <li>CSS With JavaFX</li>
+             <li>Transforming Nodes and Choosers</li>
+             <li>More on Choosers and Web Pages</li>
+             <li>SceneBuilder</li>
+             <li>Installing SceneBuilder for Windows</li>
+             <li>Installing SceneBuilder for Mac</li>
+             <li>Overview of SceneBuiler</li>
+             <li>More on SceneBuilder</li>
+             <li>JavaFX Challenge</li>
+             <li>JavaFX Challenge Part 2</li>
+             <li>JavaFX Challenge Part 3</li>
+             <li>JavaFX Challenge Part 4</li>
+             <li>JavaFX Challenge Wrap up</li>
+         </div>
+
+         LESSON 7
+
+         <h3>Basic Input and Output including java.util</h3>
+         <div>
+             <li>Exceptions</li>
+             <li>Stack Trace and Call Stack</li>
+             <li>Catching and throwing Exceptions</li>
+             <li>Multi Catch Exceptions</li>
+             <li>Introduction to I/O</li>
+             <li>Writing content - FileWriter class and Finally block</li>
+             <li>Try with Resources</li>
+             <li>FileReader and Closeable</li>
+             <li>BufferedReader</li>
+             <li>Load Big Location and Exits Files</li>
+             <li>Challenge</li>
+             <li>Buffered Writer and Challenge</li>
+             <li>Byte Streams</li>
+             <li>Reading Binary Data and End of File Exceptions</li>
+             <li>Object Input Output including Serialization</li>
+             <li>Finish Object I/O and RandomAccessFile class</li>
+             <li>Create Random Access File</li>
+             <li>Update Static Initializer Block With Random File Access</li>
+             <li>Update Adventure Game to Read Random Access File</li>
+             <li>Java NIO</li>
+             <li>Writing Objects With Java NIO</li>
+             <li>Reading Objects With Java NIO</li>
+             <li>Writing Binary Files With Java NIO</li>
+             <li>Reading Binary Files With Java NIO</li>
+             <li>Absolute and Relative Reads</li>
+             <li>Chained Put Methods</li>
+             <li>Writing Sequently</li>
+             <li>FileChannel to Copy Files and Pipes With Threads</li>
+             <li>Filesystem</li>
+             <li>More on Paths</li>
+             <li>Exists and CopyFile</li>
+             <li>Move, Rename and Delete</li>
+             <li>File Attributes</li>
+             <li>Read Existing Directory Contents</li>
+             <li>Separators Temp Files and File Stores</li>
+             <li>Walk File Tree</li>
+             <li>Copy Entire Tree</li>
+             <li>Mapping IO and NIO Methods</li>
+         </div>
+
+         LESSON 8
+
+         <h3>Concurrency in Java</h3>
+         <div>
+             <li>Concurrency and Threads Introduction</li>
+             <li>Threads</li>
+             <li>Runnable and Thread</li>
+             <li>Interrupt and Join</li>
+             <li>Multiple Threads</li>
+             <li>Thread Variables</li>
+             <li>Synchronisation</li>
+             <li>Producer and Consumer</li>
+             <li>Deadlocks, wait, notifyAll Methods</li>
+             <li>The java Util Concurrent package</li>
+             <li>Thread Interference</li>
+             <li>Reentrant Lock and Unlock</li>
+             <li>Using Try Finally With Threads</li>
+             <li>Thread Pools</li>
+             <li>ArrayBlockingQueue Class</li>
+             <li>Deadlocks</li>
+             <li>More on Deadlocks</li>
+             <li>Thread Starvation</li>
+             <li>Fair Locks and Live Locks</li>
+             <li>Live Lock Example and Slipped Conditions</li>
+             <li>Other Thread Issues</li>
+             <li>JavaFX Background Tasks</li>
+             <li>Data Binding</li>
+             <li>Service</li>
+             <li>Challenge 1 and 2</li>
+             <li>Challenge 3, 4 and 5</li>
+             <li>Challenge 6 and 7</li>
+             <li>Challenge 8</li>
+             <li>Challenge 9</li>
+             <li>Challenge 9</li>
+         </div>
+
+         LESSON 9
+
+         <h3>Lambda Expressions</h3>
+         <div>
+             <li>Lambda Expressions Introduction</li>
+             <li>Lambda Expressions Continued</li>
+             <li>Lambda Expressions Nested Blocks</li>
+             <li>Scope and Functional Programming</li>
+             <li>Functional Interfaces and Predicates</li>
+             <li>More on Predicates and Suppliers</li>
+             <li>Functions</li>
+             <li>Chaining java.util.function Functions</li>
+             <li>Streams</li>
+             <li>Streams - Intermediate and Terminal Operations</li>
+             <li>Streams - Flatmap and Lambda Best Practices</li>
+             <li>Lambda Challenge Part 1</li>
+             <li>Lambda Challenge Part 2</li>
+         </div>
+          <h3>Regular Expressions</h3>
+         <div>
+             <li>Regular Expressions Introduction</li>
+             <li>Character classes and Boundary Matchers</li>
+             <li>Quantifiers and the Pattern and Matcher classes</li>
+             <li>Matcher find and Group Methods</li>
+             <li>And, Or and Not</li>
+             <li>Regular Expressions Challenge Part 1</li>
+             <li>Regular Expressions Challenge Part 2</li>
+             <li>Regular Expressions Challenge Part 3</li>
+         </div>
+          <h3>Debugging and Unit Testing</h3>
+         <div>
+             <li>Introduction to Debugging</li>
+             <li>More on Debugging</li>
+             <li>Field Watch Points</li>
+             <li>Advanced Debugging</li>
+             <li>Introduction to Unit Testing with JUnit</li>
+             <li>Asserts in Junit</li>
+             <li>More Asserts and Exception Handling</li>
+             <li>Parameterized Testing</li>
+             <li>JUnit Challenge #1 and #2</li>
+             <li>JUnit Challenges #3 to #7</li>
+             <li>Junit Challenges #8 to #10</li>
+         </div>
+
+         LESSON 10
+
+         <h3>Databases</h3>
+         <div>
+             <li>Section Introduction</li>
+             <li>Database Terminology</li>
+             <li>Install and Setup SQLite for Windows</li>
+             <li>Install and Setup SQLite for Mac</li>
+             <li>Install and Setup SQLite for Linux</li>
+             <li>Introduction to SQLite</li>
+             <li>More with SQLite</li>
+             <li>Querying Data With SQL</li>
+             <li>SQL Order by and Joins</li>
+             <li>More Complex Joins</li>
+             <li>Wildcards in Queries and Views</li>
+             <li>Housekeeping and Final SQL Challenge</li>
+             <li>JDBC and SQLite GUI Browser</li>
+             <li>Creating Databases With JDBC in Java</li>
+             <li>JDBC Insert, Update, Delete</li>
+             <li>.executeQuery() and using Constants</li>
+             <li>The Music SQLite Database</li>
+             <li>Write Java Query for Artists</li>
+             <li>Executing SQL in DB Browser</li>
+             <li>Query Albums by Artist Method</li>
+             <li>Query Artists for Song method</li>
+             <li>Result Set Meta Data</li>
+             <li>Functions and Views</li>
+             <li>Write the Method to Query View</li>
+             <li>SQL Injection Attacks and Prepared Statements</li>
+             <li>Transactions</li>
+             <li>Inserting Records With JDBC</li>
+             <li>Insert Albums, Artists, and Songs</li>
+             <li>Test Insert JDBC Code</li>
+             <li>JDBC with a GUI Program</li>
+             <li>Add Artists</li>
+             <li>Fix Artist and Preload Records</li>
+             <li>Implement Artist Query</li>
+             <li>Add ProgressBar</li>
+             <li>Handling Updates</li>
+         </div>
+
+         LESSON 11
+
+         <h3>Java Networking Programming</h3>
+         <div>
+             <li>Networking Overview</li>
+             <li>First Client and Server Apps</li>
+             <li>Multi Threaded Server</li>
+             <li>Multi-Threading and Timeouts</li>
+             <li>UDP Server and Client</li>
+             <li>High Level APIS</li>
+             <li>URL Connections and Input Stream Reader</li>
+             <li>HTTPUrlConnection</li>
+             <li>Alternatives to HTTPUrlConnection</li>
+         </div>
+          <h3>Java 9 Module System</h3>
+         <div>
+             <li>Introduction to Modules</li>
+             <li>Module Declarations and Statements</li>
+             <li>Module Types</li>
+         </div>
+          <h3>Migrating Java Projects to Java 9</h3>
+         <div>
+             <li>Project Setup and Test</li>
+             <li>Structuring the new project</li>
+             <li>Creating the first module (Common)</li>
+             <li>Creating the Module Descriptor file</li>
+             <li>Creating the 2nd module (Database)</li>
+             <li>Challenge - Create the final module (UI)</li>
+             <li>Transitive Dependencies</li>
+         </div>
+
+         LESSON 12
+
+         <h3>Course Remaster in Progress</h3>
+         <div>
+             <li>Work in Progress</li>
+             <li>Keywords and Naming Conventions</li>
+             <li>Naming Conventions Challenge</li>
+             <li>Operator Associativity</li>
+             <li>Declaration and Expression Statements</li>
+             <li>Expression Statements, Prefix and Postfix</li>
+             <li>Whitespace</li>
+             <li>Code Blocks and Indentation</li>
+             <li>Code Blocks and if, then, and else</li>
+             <li>Boolean, Naming Conventions and Scope</li>
+             <li>Challenge and Code Duplication</li>
+             <li>Defining Methods</li>
+             <li>Executing Methods</li>
+             <li>Method Parameters Overview</li>
+             <li>Removing Code Duplication</li>
+             <li>Returning Data from a Method</li>
+             <li>Using Data from a Method Call</li>
+             <li>Method Recap and Challenge</li>
+             <li>Method Challenge Solution</li>
+         </div>  
+          <h3>Extra Information - Source code, and other stuff</h3>
+         <div>
+             <li>Source code for all Programs</li>
+             <li>Bonus Lecture and Information</li>
+         </div>
+      </div>
+      <br><br><br>
+      
+      <div style="padding-left: 420px; font-size: 40px;" >Requirements</div>
+      <div class="requirements" >
+        <br>
+        <p>
+        - A computer with either Windows, Mac or Linux to install all the free software and tools needed to build your new apps.
+        <br>
+          
+        - A strong work ethic, willingness to learn, and plenty of excitement about the awesome new programs you’re about to build.
+        </p>
+      </div>
+      <br><br><br>
+      
+      <div style="padding-left: 420px; font-size: 40px;" >Description</div>
+      
+      <div class="description" style="font-size: 20px;">
+          <br>
+          <p>You’ve just stumbled upon the most complete, in-depth Java programming course. These comprehensive java course cover everything you’ll ever need.</p>
+          <br>
+      
+          <p style="text-decoration: underline;">Whether you want to:</p>
+          <p>
+            <br>
+            - build the skills you need to get your first Java programming job
+            <br>
+            - move to a more senior software developer position
+            <br>
+            - pass the oracle java certification exam
+            <br>
+            - or just learn java to be able to create your own java apps quickly.
+          </p>
+          <br>
+
+          <p>...this complete Java Masterclass is the course you need to do all of this, and more.</p>
+          <br>
+
+          <p>Are you aiming to get your first Java Programming job but struggling to find out what skills employers want and which course will give you those skills?</p>
+          <br>
+          
+          <p>This course is designed to give you the Java skills you need to get a job as a Java developer.  By the end of the course you will understand Java extremely well and be able to build your own Java apps and be productive as a software developer.</p>
+          <br>
+          
+          <p>Lots of students have been success with getting their first job or a promotion after going through the course.</p>
+          <br>
+          
+          <h3>Why would you choose to learn Java?</h3>
+          <br>
+          
+          <p>The reality is that there is a lot of computer languages out there.  It's in the hundreds.  Why would you choose the Java language?</p>
+          <br>
+          
+          <p>The number one reason is its popularity.  According to many official websites that track popularity of languages, Java is either #1 or in the top 3.  Popularity means more companies and their staff are using it, so there are more career opportunities available for you if you are skilled in the language.</p>
+          <br>
+          
+          <p>The last thing you want to do is pick a language that is not in mainstream use.  Java came out in the 1990's and is still very popular today.
+          </p>
+          <br>
+          
+          <h3>What version of Java should you learn?</h3>
+          <br>
+          
+          <p>Generally speaking you would want to learn the very latest version of a computer programming language, but thats not necessarily the case with Java.</p>
+          <br>
+          
+          <p>Until recently Java releases were infrequent (one major release in 3 years was common).  Companies standardised on specific versions of Java.  Right now most companies are still focused on Java 8, which is a relatively old version, dating back to 2015.</p>
+          <br>
+          
+          <p>Oracle (the owners of Java) are now releasing new versions of Java every six months, and when the new version comes out the old version is no longer supported.
+          </p>
+          <br>
+          
+          <p>But to cater for most companies who tend to stick to specific versions of Java for a long time, they have marked the current version of Java - Java 11 as LTS - or Long Term support. That means that they guarantee to support this version for the long term - for a number of years at least.
+          </p>
+          <br>
+          
+          <p>Companies will stick to versions of Java that are supported in the long term. For career purposes you should learn the appropriate versions of Java that your future employer will likely be using.  Right now thats Java 8 and Java 11 (Java 9 and Java 10 have been released and already been marked obsolete and are no longer supported).
+          </p>
+          <br>
+          
+          <p>The good news is that this course is focused on Java 8, and has recently been updated for Java 11.</p>
+          <br>
+          
+          <h3>Will this course give me core java skills?</h3>
+          <br>
+          
+          <p>Yes it will.  Core Java is the fundamental parts of the java jdk (the java development kit) that programmers need to learn to move onto other more advanced technologies.
+          </p>
+          <br>
+          
+          <h3>Why should you take this course?</h3>
+          <br>
+          
+          <p>You would be joining over 260,000 students who are already enrolled in the course.
+          There are close to 60,000 reviews left by students.  It's rated as the best course to learn Java for beginners.
+          </p>
+          <br>
+          
+          <h3>What makes this course a bestseller?</h3>
+          <br>
+          
+          <p>Like you, thousands of others were frustrated and fed up with fragmented Youtube tutorials or incomplete or outdated courses which assume you already know a bunch of stuff, as well as thick, college-like textbooks able to send even the most caffeine-fuelled coder to sleep.
+          </p>
+          <br>
+          
+          <p>Like you, they were tired of low-quality lessons, poorly explained topics and all-round confusing info presented in the wrong way. That’s why so many find success in this complete Java developer course. It’s designed with simplicity and seamless progression in mind through its content.
+          </p>
+          <br>
+          
+          <p>This course assumes no previous coding experience and takes you from absolute beginner core concepts, like showing you the free tools you need to download and install, to writing your very first Java program.  You will learn the core java skills you need to become employable and if you choose to, can take advantage of all the additional content in the course. It's a one stop shop to learn java. If you want to go beyond the core content you can do so at any time.
+          </p>
+          <br>
+          
+          <h3>Here’s just some of what you’ll learn</h3>
+          <br>
+          
+          <p>(It’s okay if you don’t understand all this yet, you will in the course)
+              <br><br>
+
+              - All the essential Java keywords, operators, statements, and expressions needed to fully understand exactly what you’re coding and why - making programming easy to grasp and less frustrating
+              <br><br>
+
+              - You will learn the answers to questions like What is a Java class, What is polymorphism and inheritance and to apply them to your java apps.   
+              <br><br>
+
+              - How to safely download and install all necessary coding tools with less time and no frustrating installations or setups
+              <br><br>
+
+              - Complete chapters on object-oriented programming and many aspects of the Java API (the protocols and tools for building applications) so you can code for all platforms and derestrict your program’s user base (and potential sales)
+              <br><br>
+
+              - Environments on the market, IntelliJ IDEA! - Meaning you can code functional programs easier.  IntelliJ has both a FREE and PAID version, and you can use either in this course.
+             <br><br>
+         </p>
+          
+         <p>(Don’t worry if you’re used to using Eclipse, NetBeans or some other IDE. You’re free to use any IDE and still get the most out of this course)
+         </p>
+         <br>
+        
+          <p>- Learn Java to a sufficient level to be a be to transition to core Java technologies like Android development, the Spring framework, Java EE (Enterprise edition) in general as well as and other technologies. In order to progress to these technologies you need to first learn core Java - the fundamental building blocks.  That's what this course will help you to achieve.
+          </p>
+          <br>
+          
+          <h3 style="font-style: italic;">“AP-what?”</h3>
+          <br>
+          
+          <p>Don't worry if none of that made sense. We go into great detail explaining each and every core concept, programming term, and buzzwords you need to create your own Java programs.<br><br>
+          This truly is Java for complete beginners.<br><br>
+          By the end of this comprehensive course, you’ll master Java programming no matter what level of experience you’re at right now. You’ll understand what you are doing, and why you are doing it. This isn’t a recipe book, you’ll use your own creativity to make unique, intuitive programs.<br><br>
+          Not only do these course show you how to become a programmer in great detail, but this course includes a unique challenge feature. Each time a core concept is taught, a lesson presents a challenge for you to help you understand what you have just learned in a real world scenario.<br><br>
+          You’ll go and complete the challenge on your own, then come back and see the answers which we then explain in detail in a lesson, allowing you to check your results and identify any areas you need to go back and work on.<br><br>
+          This is a proven way to help you understand Java faster and ensure you reach your goal of becoming a Java Developer in record time. Remember doing those old past exam papers in high school or college? It’s the same concept, and it works.
+          </p>
+          <br>
+          
+          <h3>See what your fellow students have to say:</h3>
+          <br>
+          
+          <p style="font-style: italic;">"This course was a guiding light in my "Becoming a developer" path from the first step. It helped me become a much more educated developer comparing to my friend who learned to code from trial/error. It's still a guide for me. every now and then I will come back to this course to learn something new or to improve what I've learned somewhere else. A BIG Thanks to "Tim Buchalka" my Master." - Sina Jz
+          <br><br>
+          "I was an absolute beginner when I started this course, and now I can write some good small advanced clean codes. I wrote a code and showed it to a programmer, and he was shocked, he told me that I'm more than ready to start a programming career." - Amirreza Moeini
+          <br><br>
+          "I am taking this class in conjunction with a Java 101 college class. I have learned more in one afternoon of videos from this class than I have in 4 weeks of college class. Tim actually explains what things are and why they do what they do, as opposed to my college instructor that mainly said "go make a program that does *whatever*" and then I had to figure out a program that would meet those requirements but not actually learning why it worked." - Stacy Harris
+          </p>
+          <br><br>
+          
+          <p>
+          It’s safe to say our students are thrilled with this course, and more importantly, their results, and you can be too…
+          <br><br>
+          This complete Java course will teach you everything you need to know in order to code awesome, profitable projects, 
+          </p>
+          <br>
+          
+          <h3>Is the course updated?</h3>
+          <br>
+          
+          <p>It’s no secret how technology is advancing at a rapid rate. New, more powerful hardware and software are being released every day, meaning it’s crucial to stay on top with the latest knowledge.
+
+          A lot of other courses on ABC Learning CEnter get released once, and never get updated.  Learning an older version of Java can be counter productive - you could will be learning the "old way" of doing things, rather than using current technology.
+
+          Make sure you check the last updated date on the page of any course you plan to enroll - you will be shocked to see some have not been updated for years.  
+
+          That’s why we always adding new, up-to-date content to this course at no extra charge. Buy this course once, and you’ll have lifetime access to it and any future updates (which are on the way as we speak). 
+
+          We've continued to do this since the original version of the course came out, and recently have been updating it to Java 11.
+
+          With this complete Java Masterclass, you will always have updated, relevant content.
+          </p>
+          <br>
+          
+          <h3>Ready to get started, developer?</h3>
+          <br>
+          
+          <p>Enrol now using the “Register” button below, and get started on your way to creative, advanced Java brilliance. 
+          </p>
+          <br><br><br>
+      
+          <div style="font-size: 40px;" >Who this course is for:</div>
+          <br>
+          
+          <p>- This course is perfect for absolute beginners with no previous coding experience, to intermediates looking to sharpen their skills to the expert level.<br><br>
+          - Those looking to build creative and advanced Java apps for either personal use or for high-paying clients as a self-employed contractor.<br><br>
+          - Those who love letting their own creative genius shine, whilst getting paid handsome amounts to do so.
+          </p>
+          <br><br><br>
+          
+           <button id = "toggle3" style="margin-left: 200px; color: green; background-color: deepskyblue; height: 50px; width: 600px;"  href="#">REGISTER</button>
+           <div id = "register" title = "REGISTER">
+           Thank you. You are now registered to Java course!
+           </div>
+           <br><br><br>
+          
+          <button style="background-color: deepskyblue; height: 50px; width: 600px; margin-left: 200px;"><a href="course-schedule1.html">See Course Schedule</a></button> 
+           
+          
+      </div>
+      
+      
+      
+  </main>
+    </body>
+    <!-- footer -->
+    <footer class="site-footer" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle2">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tab-about">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!--external javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.menu-aim.js"></script> 
+    <script src="js/index-main.js"></script>
+    <!--end of external javascript-->
+
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Index Page where home and about-us is located. Home is usually the first page to view everytime it is visited and About Us is the information about the company.">
+
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css">
+    <!--end of external css-->
+            
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+       <!-- CSS -->
+      <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+      
+      <!-- Javascript -->
+      <!--for jqueryUI - Dialog-->
+      <script type = "text/javascript">
+         $(function() {
+            $("#toggle1").click(function() {
+               ($("#signin").dialog("isOpen") == false) ? $(
+                  "#signin").dialog("open") : $("#signin").dialog("close") ;
+            });
+            $("#signin").dialog({autoOpen: false});
+             
+            $("#toggle2").click(function() {
+               ($("#register").dialog("isOpen") == false) ? $(
+                  "#register").dialog("open") : $("#register").dialog("close") ;
+            });
+            $("#register").dialog({autoOpen: false});
+             
+            $("#toggle3").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+             
+            $("#toggle4").click(function() {
+              ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+         });
+      </script>
+      
+      <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"	
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    </head>
+  <body>
+      
+      <button id = "toggle1" style="float: right; margin-right: 200px; margin-top: 60px; color: green; background-color: #e9e9cf; height: 50px; width: 100px; border-radius: 10px 10px 10px 10px;">SIGN IN</button>
+      <div id = "signin" title = "SIGN IN">
+         You are now signed in.
+      </div>     
+      
+      <button id = "toggle2" style="float: right; margin-right: 20px; margin-top: 60px; color: green; background-color: #e9e9cf;; height: 50px; width: 100px; border-radius: 10px 10px 10px 10px;"  href="#">REGISTER</button>
+      <div id = "register" title = "REGISTER">
+         Visit Course Menu for Course Registration.
+      </div>
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+          <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#tab-about">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li class="see-all" ><a id = "toggle3" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>    
+            
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>        
+  </header>
+
+  <main class="back-color">
+
+    <div class="companyname">
+      <marquee behavior="alternate" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" class="heading1">ABC Learning Center</marquee >   
+      <div class="heading2">IT Course Provider</div>
+    </div>
+
+    <!--about section-->
+    <div class="aboutusimage" id="tab-about"></div>
+    <section class="about">    
+      <article>     
+        <figure>      
+          <img src="images/mission.png" alt="company mission"/>                 
+        </figure>
+        <hgroup>      
+          <p>To be respected and trusted as a world-class web development company delivering exceptional enterprise web applications.<br><br>
+          ABC Learning Center will continuously strive to improve in order to exist as the industry leader and a premier outsourcing company in the field of web design, development, mobile web and application development. It aims to achieve this through excellent services and unmatched professional skill by building life-long relationships with the clients along with achieving the highest client satisfaction.</p>    
+        </hgroup>      
+      </article>        
+
+      <article>    
+        <figure>      
+          <img src="images/vision.jpg" alt="company vision" />  
+        </figure>
+        <hgroup>      
+         <p>To expand our web designing and software development business around the world with providing our clients customized and effective IT services to target their goal. We are capable to provide top quality IT services like Web Designing, Website Development, shopping cart website, e-commerce website development, custom software development, SEO (Search Engine Optimization), Internet marketing, Email Marketing, SMS marketing, Domain and Hosting everything under one roof. We have well trained and experienced IT professionals.</p>          
+        </hgroup>     
+      </article>
+
+      <div class="aboutcourseimage"></div>
+
+      <article>     
+        <figure>      
+          <img src="images/description.jpg" alt="course description"/>                 
+        </figure>
+        <hgroup>      
+          <p>A comprehensive course that will take you one zero knowledge to an industry ready Full Stack Developer.</p>    
+        </hgroup>      
+      </article>      
+
+      <article>    
+        <figure>      
+          <img src="images/goals.png" alt="course goals" />     
+        </figure>
+        <hgroup>      
+         <p>Become a developer with strong foundation in less time.</p><br>
+         <p>Get industry related experience.</p><br>
+         <p>Learn up to date technologies at par with what the industry uses.</p><br>
+         <p>Learn basics of Cyber Security, Blockchain Development, and a lot more cool and new technologies.</p><br>
+         <p>Learn SEO techniques.</p><br>          
+        </hgroup>     
+      </article>
+
+      <article>     
+        <figure>      
+          <img src="images/perks.png" alt="course perks" />    
+        </figure>
+        <hgroup>      
+          <p>Lifetime access to mentors all over the globe in different industries.</p><br>
+          <p>Technology updates/lectures from time to time after the course.</p>     
+        </hgroup>     
+      </article>
+
+    </section>
+  
+    <!--end of about section-->   
+  </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle4">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tab-about">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center.</a>
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!--external javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.js"></script>
+<!--    <script src="js/jquery-3.4.0.min.js"></script>-->
+    <script src="js/jquery.menu-aim.js"></script> 
+    <script src="js/index-main.js"></script>
+    <!--end of external javascript-->
+
+  </body>
+</html>

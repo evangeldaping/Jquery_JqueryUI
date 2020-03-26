@@ -1,0 +1,1181 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Course Schedule Page for Basic Web Development where it shows the time allotment for the course.">
+
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/course-schedule1.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css"> 
+    <!--end of external css-->
+      
+    <!--jQuery Script-->
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+    <!--internal CSS-->
+    <style>
+        #accordion-2{
+             font-size: 14px;
+             width: 500px;
+          }
+    </style>
+
+    <!-- Javascript -->
+
+    <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"  
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    <!--for jqueryUI - Accordion-->
+    <script>
+        $(function() {
+        $( "#accordion-1" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+       <script>
+        $(function() {
+        $( "#accordion-2" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+    <script>
+        $(function() {
+        $( "#accordion-3" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-4" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-5" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-6" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-7" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-8" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-9" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-10" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-11" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-12" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+
+    
+    <!--for jqueryUI - Dialog-->
+      <script type = "text/javascript">
+         $(function() {
+             
+            $("#toggle1").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+
+            $("#toggle2").click(function() {
+               ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+             
+            $("#lesson1toggle").click(function() {
+               ($("#lesson1").dialog("isOpen") == false) ? $(
+                  "#lesson1").dialog("open") : $("#lesson1").dialog("close") ;
+            });
+            $("#lesson1").dialog({autoOpen: false});
+             
+            $("#lesson2toggle").click(function() {
+               ($("#lesson2").dialog("isOpen") == false) ? $(
+                  "#lesson2").dialog("open") : $("#lesson2").dialog("close") ;
+            });
+            $("#lesson2").dialog({autoOpen: false});
+             
+             
+            $("#lesson3toggle").click(function() {
+               ($("#lesson3").dialog("isOpen") == false) ? $(
+                  "#lesson3").dialog("open") : $("#lesson3").dialog("close") ;
+            });
+            $("#lesson3").dialog({autoOpen: false});
+             
+             
+            $("#lesson4toggle").click(function() {
+               ($("#lesson4").dialog("isOpen") == false) ? $(
+                  "#lesson4").dialog("open") : $("#lesson4").dialog("close") ;
+            });
+            $("#lesson4").dialog({autoOpen: false});
+             
+             
+            $("#lesson5toggle").click(function() {
+               ($("#lesson5").dialog("isOpen") == false) ? $(
+                  "#lesson5").dialog("open") : $("#lesson5").dialog("close") ;
+            });
+            $("#lesson5").dialog({autoOpen: false});
+             
+             
+            $("#lesson6toggle").click(function() {
+               ($("#lesson6").dialog("isOpen") == false) ? $(
+                  "#lesson6").dialog("open") : $("#lesson6").dialog("close") ;
+            });
+            $("#lesson6").dialog({autoOpen: false});
+             
+             
+            $("#lesson7toggle").click(function() {
+               ($("#lesson7").dialog("isOpen") == false) ? $(
+                  "#lesson7").dialog("open") : $("#lesson7").dialog("close") ;
+            });
+            $("#lesson7").dialog({autoOpen: false});
+             
+             
+            $("#lesson8toggle").click(function() {
+               ($("#lesson8").dialog("isOpen") == false) ? $(
+                  "#lesson8").dialog("open") : $("#lesson8").dialog("close") ;
+            });
+            $("#lesson8").dialog({autoOpen: false});
+             
+             
+            $("#lesson9toggle").click(function() {
+               ($("#lesson9").dialog("isOpen") == false) ? $(
+                  "#lesson9").dialog("open") : $("#lesson9").dialog("close") ;
+            });
+            $("#lesson9").dialog({autoOpen: false});
+             
+             
+            $("#lesson10toggle").click(function() {
+               ($("#lesson10").dialog("isOpen") == false) ? $(
+                  "#lesson10").dialog("open") : $("#lesson10").dialog("close") ;
+            });
+            $("#lesson10").dialog({autoOpen: false});
+             
+             
+            $("#lesson11toggle").click(function() {
+               ($("#lesson11").dialog("isOpen") == false) ? $(
+                  "#lesson11").dialog("open") : $("#lesson11").dialog("close") ;
+            });
+            $("#lesson11").dialog({autoOpen: false});
+             
+             
+            $("#lesson12toggle").click(function() {
+               ($("#lesson12").dialog("isOpen") == false) ? $(
+                  "#lesson12").dialog("open") : $("#lesson12").dialog("close") ;
+            });
+            $("#lesson12").dialog({autoOpen: false});
+         });
+      </script>
+  <body>
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+         <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+               <li class="see-all" ><a id = "toggle1" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>       
+           
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>  
+  </header>
+
+  <main>
+
+   <div class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table100 ver1">
+          <div class="table100-firstcol" style="text-align: center;">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">COURSE CONTENT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 1</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 2</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 3</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 4</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 5</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 6</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 7</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 8</td>
+                </tr>
+                  
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 9</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 11</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="wrap-table100-nextcols js-pscroll" style="text-align: center;">
+            <div class="table100-nextcols">
+              <table>
+                <thead>
+                  <tr class="row100 head">
+                    <th class="cell100 column2">Class Type</th>
+                    <th class="cell100 column3">Topics</th>                    
+                    <th class="cell100 column4">Faculty</th>
+                    <th class="cell100 column5"># of Hrs</th>
+                    <th class="cell100 column6">Date</th>
+                    <th class="cell100 column7"># of Days</th>
+                    <th class="cell100 column8">Time</th>
+                    <th class="cell100 column9">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="row100 body">   
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson1toggle">Browse Here</a></button>
+                      <div id = "lesson1" title = "Lesson 1 - Topics">                       
+                       <div id = "accordion-1">
+                         <h3>Course Introduction</h3>
+                         <div>
+                            <ul style="list-style: initial;">
+                               <li>Introduction to the Course</li>
+                               <li>Remaster in Progress</li>
+                               <li>Video Quality</li>
+                               <li>Subtitles</li>
+                               <li>How to get Help</li>
+                               <li>Important Tip - Source Code</li>
+                            </ul>
+                         </div>
+                         <h3>Software Tools Setup</h3>
+                         <div>
+                            <ul>
+                               <li>Biggest tip to succeed as Java Programmer</li>
+                               <li>Being persistent and the four stages of becoming a Programmer</li>
+                               <li>Software Tools Introduction</li>
+                               <li>Java Development Kit Installation Overview</li>
+                               <li>Install JDK 11 for Windows</li>
+                               <li>Install Intellij IDEA for Windows</li>
+                               <li>Install JDK for Mac</li>
+                               <li>Install Intellij IDEA for Mac</li>
+                               <li>Install JDK for Linux</li>
+                               <li>Install Intellij IDEA for Linux</li>
+                               <li>Configure Intellj IDEA</li>
+                            </ul>
+                         </div>
+                         <h3>First Steps</h3>
+                         <div>
+                            <ul>
+                               <li>Introduction</li>
+                               <li>Hello World Project</li>
+                               <li>Defining the Main Method</li>
+                               <li>Hello World Challenge and Common Errors</li>
+                               <li>Variables</li>
+                               <li>Starting out with Expressions</li>
+                               <li>Primitive Types</li>
+                               <li>byte, short, long and width</li>
+                               <li>Casting in Java</li>
+                               <li>Primitive Types Challenge</li>
+                               <li>float and double Primitive Types</li>
+                               <li>Floating Point Precision and a Challenge</li>
+                               <li>The char and boolean Primitive Data Types</li>
+                               <li>Primitive Types Recap and Expressions</li>
+                               <li>Abbreviating Operators</li>
+                               <li>if-then Statement</li>
+                               <li>Logical and Operator</li>
+                               <li>Logical OR Operator</li>
+                               <li>Assignment Operator VS Equals to Operator</li>
+                               <li>Ternary Operator</li>
+                               <li>Operator Precedence and Operator Challenge</li>
+                               <li>First Steps Summary</li>
+                               <li>End of Remaster</li>
+                            </ul>
+                         </div>
+                      </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">(START of class) February 3, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson2toggle">Browse Here</a></button>
+                    <div id = "lesson2" title = "Lesson 2 - Topics">                       
+                       <div id = "accordion-2">
+                         <h3>Java Tutorial: Expressions, Statements, Code blocks, Methods and more</h3>
+                         <div>
+                              <li>Introduction</li>
+                              <li>Keywords And Expressions</li>
+                              <li>Statments, Whitespace and Indentation(Code Organization)</li>
+                              <li>Code Blocks And The If Then Else Control Statements</li>
+                              <li>if then else Recap</li>
+                              <li>Methods In Java</li>
+                              <li>More On Methods And A Challenge</li>
+                              <li>Method Challenge - Final Code Changes</li>
+                              <li>DiffMerge Tool Introduction</li>
+                              <li>Install DiffMerge</li>
+                              <li>Using DiffMerge</li>
+                              <li>Coding Exercises</li>
+                              <li>Coding Exercises Example Part 1</li>
+                              <li>Coding Exercises Example Part 2 </li>
+                              <li>Coding Exercises Example Part 3</li>
+                              <li>Speed Converter</li>
+                              <li>MegaBytes Converter</li>
+                              <li>Barking Dog</li>
+                              <li>Leap Year Calculator</li>
+                              <li>Decimal Comparator</li>
+                              <li>Equal Sum Checker</li>
+                              <li>Teen Number Checker</li>
+                              <li>Method Overloading</li>
+                              <li>Method OVerloading Recap</li>
+                              <li>Seconds and Minute Challenge</li>
+                              <li>Bonus Challenge Solution</li>
+                              <li>Area Calculator</li>
+                              <li>Minutes To Years and Days Caculator</li>
+                              <li>Equaltity Printer</li>
+                              <li>Playing Cat</li>
+                         </div>
+                         <h3>Control Flow Statements</h3>
+                         <div>
+                             <li>Introduction</li>
+                             <li>The switch statement</li>
+                             <li>Day of the Week Challenge</li>
+                             <li>Number In Word</li>
+                             <li>Number of Days In Month</li>
+                             <li>The for Statement</li>
+                             <li>For Loop Recap</li>
+                             <li>Sum 3 and 5 Challenge</li>
+                             <li>Sum Odd</li>
+                             <li>The while and do while statements</li>
+                             <li>While and Do While Recap</li>
+                             <li>Digit Sum Challenge</li>
+                             <li>Number Palindrome</li>
+                             <li>First And Last Digit Sum</li>
+                             <li>Even Digit Sum</li>
+                             <li>Shared Digit</li>
+                             <li>Last Digit Checker</li>
+                             <li>Greatest Common Divisor</li>
+                             <li>All Factors</li>
+                             <li>Perfect Number</li>
+                             <li>Number To Words</li>
+                             <li>Parsing Values from a String</li>
+                             <li>Flour Pack Problem</li>
+                             <li>Largest Prime</li>
+                             <li>Diagonal Star</li>
+                             <li>Reading User Input</li>
+                             <li>Problems and Solutions</li>
+                             <li>Reading User Input Challenge</li>
+                             <li>Min and Max Challenge</li>
+                             <li>Input Calculator</li>
+                             <li>Paint Job</li>
+                         </div>
+                      </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 5, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                 <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson3toggle">Browse Here</a></button>
+                    <div id = "lesson3" title = "Lesson 3 - Topics">                       
+                       <div id = "accordion-3">
+                         <h3>OOP Part 1 - Classes, Constructors and Inheritance</h3>
+                         <div>
+                             <li>Introduction</li>
+                             <li>Classes Part 1</li>
+                             <li>Classes Part 2</li>
+                             <li>Sum Calculator</li>
+                             <li>Person</li>
+                             <li>Constructors - Part 1</li>
+                             <li>Constructors - Part 2</li>
+                             <li>Wall Area</li>
+                             <li>Point</li>
+                             <li>Carpet Cost Calculator</li>
+                             <li>Complex Operators</li>
+                             <li>Inheritance - Part 1</li>
+                             <li>Inheritance - Part 2</li>
+                             <li>Reference vs Object vs Instance vs Class</li>
+                             <li>this vs super</li>
+                             <li>Method Overloading vs OVerriding Recap</li>
+                             <li>Static vs Instance Methods</li>
+                             <li>Static vs Instance Variables</li>
+                             <li>Inheritance Challenge Part 1</li>
+                             <li>Inheritance Challenge Part 2</li>
+                             <li>Cylinder</li>
+                             <li>Pool Area</li>
+                         </div>
+                         <h3>OOP Part 2 - Composition, Encapsulation, and Polymorphism</h3>
+                         <div>
+                             <li>Introduction</li>
+                             <li>Composition</li>
+                             <li>Composition Part 2</li>
+                             <li>Encapsulation</li>
+                             <li>Encapsulation Challenge</li>
+                             <li>Polymorphism</li>
+                             <li>Polymorphism Challenge</li>
+                             <li>OOP Master Challenge Exercise</li>
+                             <li>OOP Challenge Solution</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 7, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson4toggle">Browse Here</a></button>
+                    <div id = "lesson4" title = "Lesson 4 - Topics">                       
+                       <div id = "accordion-4">
+                         <h3>Arrays, Java inbuilt Lists, Autoboxing and Unboxing</h3>
+                         <div>
+                             <li>Arrays</li>
+                             <li>Array (Challenge Exercise)</li>
+                             <li>Arrays Recap</li>
+                             <li>Reference Types vs Values Types</li>
+                             <li>Minimum Element Challenge</li>
+                             <li>Reverse Array Challenge</li>
+                             <li>List ArrayList Part 1</li>
+                             <li>ArrayList Part 2</li>
+                             <li>ArrayList Part 3</li>
+                             <li>ArrayList Challenge Part 1</li>
+                             <li>ArrayList Challenge Part 2</li>
+                             <li>ArrayList Challenge Part 3</li>
+                             <li>Bug Fix for ArrayList Challenge</li>
+                             <li>Autoboxing and Unboxing</li>
+                             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 1</li>
+                             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 2</li>
+                             <li>Autoboxing and Unboxing(Challenge Exercise) - Part 3</li>
+                             <li>LinkedList Part 1</li>
+                             <li>LinkedList Part 2</li>
+                             <li>LinkedList Part 3</li>
+                             <li>LinkedList Challenge Part 1</li>
+                             <li>Bug Fix for "Track 1" Error</li>
+                             <li>LinkedList Challenge Part 2</li>
+                             <li>LinkedList Challenge Part 3 (Final)</li>
+                         </div>
+                         <h3>Inner and Abstract Classes and Interfaces</h3>
+                         <div>
+                             <li>Interfaces</li>
+                             <li>Interfaces Part 2</li>
+                             <li>Interfaces Challenge Part 1</li>
+                             <li>Interfaces Challenge Part 2</li>
+                             <li>Inner Classes Part 1</li>
+                             <li>Inner Classes Part 2</li>
+                             <li>Inner Classes Challenge</li>
+                             <li>Abstract Classes Part 1</li>
+                             <li>Abstract Classes Part 2</li>
+                             <li>Interfaces vs Abstract Class</li>
+                             <li>Abstract Class Challenge Part 1</li>
+                             <li>Abstract Class Challenge Part 2</li>
+                             <li>Abstract Class Challenge Part 3 (includes recursion)</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 10, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                 <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson5toggle">Browse Here</a></button>
+                    <div id = "lesson5" title = "Lesson 5 - Topics">                       
+                       <div id = "accordion-5">
+                         <h3>Java Generics</h3>
+                         <div>
+                             <li>Generics Introduction</li>
+                             <li>Our Generics Class</li>
+                             <li>Our Generics Class Part 2</li>
+                             <li>Our Generics Class Part 3</li>
+                             <li>Generics Challenge</li>
+                         </div>
+                         <h3>Naming Conventions and Packages, static and final keywords</h3>
+                         <div>
+                             <li>Naming Conventions</li>
+                             <li>Packages</li>
+                             <li>Packages Part 2</li>
+                             <li>Packages Part 3</li>
+                             <li>Packages (Challenge Exercise)</li>
+                             <li>Scope</li>
+                             <li>Scope Part 2 and Visibility</li>
+                             <li>Scope (Challenge Exercise)</li>
+                             <li>Access Modifiers</li>
+                             <li>The static statement</li>
+                             <li>The final statement</li>
+                             <li>Final Part 2 and Static Initializers</li>
+                         </div>
+                         <h3>Java Collections</h3>
+                         <div>
+                             <li>Collections Overview</li>
+                             <li>Binary Search</li>
+                             <li>Collections List Methods</li>
+                             <li>Comparable and Comparator</li>
+                             <li>Maps</li>
+                             <li>Map Continued and Adventure Game</li>
+                             <li>Adding Exits to the Adventure Game</li>
+                             <li>Adventure Game Challenge</li>
+                             <li>Immutable Classes</li>
+                             <li>Immutable Class Challenge</li>
+                             <li>Sets And HashSet</li>
+                             <li>HashSet - equals() and hashCode()</li>
+                             <li>Finish Off equals() and hashCode()</li>
+                             <li>Potential issue with equals() and sub-classing</li>
+                             <li>Sets - Symmetric and Asymetric</li>
+                             <li>Finishing OFF Sets</li>
+                             <li>Sets Challenge Part 1</li>
+                             <li>Sets Challenge Part 2</li>
+                             <li>Sets Challenge Part 3</li>
+                             <li>Sorted Collections</li>
+                             <li>StockList Class With Maps</li>
+                             <li>Add a Basket</li>
+                             <li>TreeMap and Unmodifiable Maps</li>
+                             <li>Challenge Part 1</li>
+                             <li>Challenge Part 2</li>
+                             <li>Challenge Part 3</li>
+                             <li>Challenge Part 4 (Final)</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 12, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">         
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson6toggle">Browse Here</a></button>
+                    <div id = "lesson6" title = "Lesson 6 - Topics">                       
+                       <div id = "accordion-6">
+                         <h3>JavaFX</h3>
+                         <div>
+                             <li>JDK11 Global Library Configuration</li>
+                             <li>Create Your First JavaFX Project</li>
+                             <li>JavaFX Overview</li>
+                             <li>JavaFX Hello World Program</li>
+                             <li>GridPane Layout</li>
+                             <li>Hbox Layout</li>
+                             <li>Border Pane Layout</li>
+                             <li>Other Layouts</li>
+                             <li>Controls</li>
+                             <li>RadioButton and Checkbox</li>
+                             <li>ComboBox and ChoiceBox</li>
+                             <li>Slider, Spinner, ColorPicker and DatePicker Controls</li>
+                             <li>TitledPane</li>
+                             <li>Events and Event Handlers</li>
+                             <li>Events Continued</li>
+                             <li>UI Thread</li>
+                             <li>Threads and Runnable</li>
+                             <li>Setup Sample Todo List Application</li>
+                             <li>Base Interface</li>
+                             <li>Add Change Listener</li>
+                             <li>Formatting Dates</li>
+                             <li>Singletons</li>
+                             <li>Load and Save ToDo Items from/to Disk</li>
+                             <li>Add DialogPane</li>
+                             <li>Show Dialog and Add Controller Code</li>
+                             <li>Bug Fix and Update List View</li>
+                             <li>Data Binding and Observable</li>
+                             <li>Cell Factories</li>
+                             <li>Context Menu</li>
+                             <li>KeyEvents and Toolbars</li>
+                             <li>SortedList</li>
+                             <li>FilteredList</li>
+                             <li>CSS With JavaFX</li>
+                             <li>Transforming Nodes and Choosers</li>
+                             <li>More on Choosers and Web Pages</li>
+                             <li>SceneBuilder</li>
+                             <li>Installing SceneBuilder for Windows</li>
+                             <li>Installing SceneBuilder for Mac</li>
+                             <li>Overview of SceneBuiler</li>
+                             <li>More on SceneBuilder</li>
+                             <li>JavaFX Challenge</li>
+                             <li>JavaFX Challenge Part 2</li>
+                             <li>JavaFX Challenge Part 3</li>
+                             <li>JavaFX Challenge Part 4</li>
+                             <li>JavaFX Challenge Wrap up</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 14, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson7toggle">Browse Here</a></button>
+                    <div id = "lesson7" title = "Lesson 7 - Topics">                       
+                       <div id = "accordion-7">
+                         <h3>Basic Input and Output including java.util</h3>
+                         <div>
+                             <li>Exceptions</li>
+                             <li>Stack Trace and Call Stack</li>
+                             <li>Catching and throwing Exceptions</li>
+                             <li>Multi Catch Exceptions</li>
+                             <li>Introduction to I/O</li>
+                             <li>Writing content - FileWriter class and Finally block</li>
+                             <li>Try with Resources</li>
+                             <li>FileReader and Closeable</li>
+                             <li>BufferedReader</li>
+                             <li>Load Big Location and Exits Files</li>
+                             <li>Challenge</li>
+                             <li>Buffered Writer and Challenge</li>
+                             <li>Byte Streams</li>
+                             <li>Reading Binary Data and End of File Exceptions</li>
+                             <li>Object Input Output including Serialization</li>
+                             <li>Finish Object I/O and RandomAccessFile class</li>
+                             <li>Create Random Access File</li>
+                             <li>Update Static Initializer Block With Random File Access</li>
+                             <li>Update Adventure Game to Read Random Access File</li>
+                             <li>Java NIO</li>
+                             <li>Writing Objects With Java NIO</li>
+                             <li>Reading Objects With Java NIO</li>
+                             <li>Writing Binary Files With Java NIO</li>
+                             <li>Reading Binary Files With Java NIO</li>
+                             <li>Absolute and Relative Reads</li>
+                             <li>Chained Put Methods</li>
+                             <li>Writing Sequently</li>
+                             <li>FileChannel to Copy Files and Pipes With Threads</li>
+                             <li>Filesystem</li>
+                             <li>More on Paths</li>
+                             <li>Exists and CopyFile</li>
+                             <li>Move, Rename and Delete</li>
+                             <li>File Attributes</li>
+                             <li>Read Existing Directory Contents</li>
+                             <li>Separators Temp Files and File Stores</li>
+                             <li>Walk File Tree</li>
+                             <li>Copy Entire Tree</li>
+                             <li>Mapping IO and NIO Methods</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>                    
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 17, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                   <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson8toggle">Browse Here</a></button>
+                    <div id = "lesson8" title = "Lesson 8 - Topics">                       
+                       <div id = "accordion-8">
+                         <h3>Concurrency in Java</h3>
+                         <div>
+                             <li>Concurrency and Threads Introduction</li>
+                             <li>Threads</li>
+                             <li>Runnable and Thread</li>
+                             <li>Interrupt and Join</li>
+                             <li>Multiple Threads</li>
+                             <li>Thread Variables</li>
+                             <li>Synchronisation</li>
+                             <li>Producer and Consumer</li>
+                             <li>Deadlocks, wait, notifyAll Methods</li>
+                             <li>The java Util Concurrent package</li>
+                             <li>Thread Interference</li>
+                             <li>Reentrant Lock and Unlock</li>
+                             <li>Using Try Finally With Threads</li>
+                             <li>Thread Pools</li>
+                             <li>ArrayBlockingQueue Class</li>
+                             <li>Deadlocks</li>
+                             <li>More on Deadlocks</li>
+                             <li>Thread Starvation</li>
+                             <li>Fair Locks and Live Locks</li>
+                             <li>Live Lock Example and Slipped Conditions</li>
+                             <li>Other Thread Issues</li>
+                             <li>JavaFX Background Tasks</li>
+                             <li>Data Binding</li>
+                             <li>Service</li>
+                             <li>Challenge 1 and 2</li>
+                             <li>Challenge 3, 4 and 5</li>
+                             <li>Challenge 6 and 7</li>
+                             <li>Challenge 8</li>
+                             <li>Challenge 9</li>
+                             <li>Challenge 9</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 19, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+                    
+                    <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson9toggle">Browse Here</a></button>
+                    <div id = "lesson9" title = "Lesson 9 - Topics">                       
+                       <div id = "accordion-9">
+                         <h3>Lambda Expressions</h3>
+                         <div>
+                             <li>Lambda Expressions Introduction</li>
+                             <li>Lambda Expressions Continued</li>
+                             <li>Lambda Expressions Nested Blocks</li>
+                             <li>Scope and Functional Programming</li>
+                             <li>Functional Interfaces and Predicates</li>
+                             <li>More on Predicates and Suppliers</li>
+                             <li>Functions</li>
+                             <li>Chaining java.util.function Functions</li>
+                             <li>Streams</li>
+                             <li>Streams - Intermediate and Terminal Operations</li>
+                             <li>Streams - Flatmap and Lambda Best Practices</li>
+                             <li>Lambda Challenge Part 1</li>
+                             <li>Lambda Challenge Part 2</li>
+                         </div>
+                         <h3>Regular Expressions</h3>
+                         <div>
+                             <li>Regular Expressions Introduction</li>
+                             <li>Character classes and Boundary Matchers</li>
+                             <li>Quantifiers and the Pattern and Matcher classes</li>
+                             <li>Matcher find and Group Methods</li>
+                             <li>And, Or and Not</li>
+                             <li>Regular Expressions Challenge Part 1</li>
+                             <li>Regular Expressions Challenge Part 2</li>
+                             <li>Regular Expressions Challenge Part 3</li>
+                         </div>
+                          <h3>Debugging and Unit Testing</h3>
+                         <div>
+                             <li>Introduction to Debugging</li>
+                             <li>More on Debugging</li>
+                             <li>Field Watch Points</li>
+                             <li>Advanced Debugging</li>
+                             <li>Introduction to Unit Testing with JUnit</li>
+                             <li>Asserts in Junit</li>
+                             <li>More Asserts and Exception Handling</li>
+                             <li>Parameterized Testing</li>
+                             <li>JUnit Challenge #1 and #2</li>
+                             <li>JUnit Challenges #3 to #7</li>
+                             <li>Junit Challenges #8 to #10</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 21, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">         
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson10toggle">Browse Here</a></button>
+                    <div id = "lesson10" title = "Lesson 10 - Topics">                       
+                       <div id = "accordion-10">
+                         <h3>Databases</h3>
+                         <div>
+                             <li>Section Introduction</li>
+                             <li>Database Terminology</li>
+                             <li>Install and Setup SQLite for Windows</li>
+                             <li>Install and Setup SQLite for Mac</li>
+                             <li>Install and Setup SQLite for Linux</li>
+                             <li>Introduction to SQLite</li>
+                             <li>More with SQLite</li>
+                             <li>Querying Data With SQL</li>
+                             <li>SQL Order by and Joins</li>
+                             <li>More Complex Joins</li>
+                             <li>Wildcards in Queries and Views</li>
+                             <li>Housekeeping and Final SQL Challenge</li>
+                             <li>JDBC and SQLite GUI Browser</li>
+                             <li>Creating Databases With JDBC in Java</li>
+                             <li>JDBC Insert, Update, Delete</li>
+                             <li>.executeQuery() and using Constants</li>
+                             <li>The Music SQLite Database</li>
+                             <li>Write Java Query for Artists</li>
+                             <li>Executing SQL in DB Browser</li>
+                             <li>Query Albums by Artist Method</li>
+                             <li>Query Artists for Song method</li>
+                             <li>Result Set Meta Data</li>
+                             <li>Functions and Views</li>
+                             <li>Write the Method to Query View</li>
+                             <li>SQL Injection Attacks and Prepared Statements</li>
+                             <li>Transactions</li>
+                             <li>Inserting Records With JDBC</li>
+                             <li>Insert Albums, Artists, and Songs</li>
+                             <li>Test Insert JDBC Code</li>
+                             <li>JDBC with a GUI Program</li>
+                             <li>Add Artists</li>
+                             <li>Fix Artist and Preload Records</li>
+                             <li>Implement Artist Query</li>
+                             <li>Add ProgressBar</li>
+                             <li>Handling Updates</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 24, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson11toggle">Browse Here</a></button>
+                    <div id = "lesson11" title = "Lesson 11 - Topics">                       
+                       <div id = "accordion-11">
+                          <h3>Java Networking Programming</h3>
+                             <div>
+                                 <li>Networking Overview</li>
+                                 <li>First Client and Server Apps</li>
+                                 <li>Multi Threaded Server</li>
+                                 <li>Multi-Threading and Timeouts</li>
+                                 <li>UDP Server and Client</li>
+                                 <li>High Level APIS</li>
+                                 <li>URL Connections and Input Stream Reader</li>
+                                 <li>HTTPUrlConnection</li>
+                                 <li>Alternatives to HTTPUrlConnection</li>
+                             </div>
+                              <h3>Java 9 Module System</h3>
+                             <div>
+                                 <li>Introduction to Modules</li>
+                                 <li>Module Declarations and Statements</li>
+                                 <li>Module Types</li>
+                             </div>
+                              <h3>Migrating Java Projects to Java 9</h3>
+                             <div>
+                                 <li>Project Setup and Test</li>
+                                 <li>Structuring the new project</li>
+                                 <li>Creating the first module (Common)</li>
+                                 <li>Creating the Module Descriptor file</li>
+                                 <li>Creating the 2nd module (Database)</li>
+                                 <li>Challenge - Create the final module (UI)</li>
+                                 <li>Transitive Dependencies</li>
+                             </div>         
+                        </div>
+                    </div>
+                    </td>                    
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 26, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                   <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson12toggle">Browse Here</a></button>
+                    <div id = "lesson12" title = "Lesson 12 - Topics">                       
+                       <div id = "accordion-12">
+                          <h3>Course Remaster in Progress</h3>
+                             <div>
+                                 <li>Work in Progress</li>
+                                 <li>Keywords and Naming Conventions</li>
+                                 <li>Naming Conventions Challenge</li>
+                                 <li>Operator Associativity</li>
+                                 <li>Declaration and Expression Statements</li>
+                                 <li>Expression Statements, Prefix and Postfix</li>
+                                 <li>Whitespace</li>
+                                 <li>Code Blocks and Indentation</li>
+                                 <li>Code Blocks and if, then, and else</li>
+                                 <li>Boolean, Naming Conventions and Scope</li>
+                                 <li>Challenge and Code Duplication</li>
+                                 <li>Defining Methods</li>
+                                 <li>Executing Methods</li>
+                                 <li>Method Parameters Overview</li>
+                                 <li>Removing Code Duplication</li>
+                                 <li>Returning Data from a Method</li>
+                                 <li>Using Data from a Method Call</li>
+                                 <li>Method Recap and Challenge</li>
+                                 <li>Method Challenge Solution</li>
+                             </div>  
+                              <h3>Extra Information - Source code, and other stuff</h3>
+                             <div>
+                                 <li>Source code for all Programs</li>
+                                 <li>Bonus Lecture and Information</li>
+                             </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">February 28, 2020 (END of class)</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+    <!-- footer -->
+    <footer class="site-footer" style="margin-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle2">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tab-about">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+  <script>
+    $('.js-pscroll').each(function(){
+      var ps = new PerfectScrollbar(this);
+
+      $(window).on('resize', function(){
+        ps.update();
+      })
+
+      $(this).on('ps-x-reach-start', function(){
+        $(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+      });
+
+      $(this).on('ps-scroll-x', function(){
+        $(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+      });
+
+    });   
+  </script>
+
+  <!--external javascript-->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="js/schedule.js"></script>   
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.menu-aim.js"></script> 
+  <script src="js/index-main.js"></script>
+  <!--end of external javascript-->
+
+  </body>
+</html>

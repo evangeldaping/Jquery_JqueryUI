@@ -1,0 +1,582 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Course Detail Page for Javascript where it shows the course content, requirements and description of the course.">
+
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/course-details2.css">
+    <link rel="stylesheet" href="css/course-schedule2.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css">
+    <!--end of external css-->
+    
+    <!--external jquery-->
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+    <!--internal CSS-->    
+    <style>
+         #accordion-2{
+             font-size: 14px;
+             width: 1452px;
+             padding-left: 450px;
+          }
+    </style>
+      
+    <!--jQuery-Javascript -->
+
+    <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"  
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    <!--for jqueryUI - Dialog-->
+    <script type = "text/javascript">
+        $(function() {
+
+            $("#toggle1").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+
+            $("#toggle2").click(function() {
+               ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+
+            $("#toggle3").click(function() {
+            ($("#register").dialog("isOpen") == false) ? $(
+               "#register").dialog("open") : $("#register").dialog("close") ;
+            });
+            $("#register").dialog({autoOpen: false});
+         });
+    </script>
+      
+    <!--for jqueryUI - Accordion--> 
+    <script>
+         $(function() {
+            $( "#accordion-2" ).accordion({
+               collapsible: true
+            });
+         });
+    </script>
+
+    </head>
+  <body>
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+          <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li class="see-all" ><a id = "toggle1" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>    
+                   
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>  
+  </header>
+
+  <main>
+    
+    <div class="javascript">    
+      <h2>Modern JavaScript From The Beginning</h2>
+      <br>
+    <p style="color: white; font-size: 20px;">Learn and build projects with pure JavaScript (No frameworks or libraries)</p>                    
+    </div>  
+    <div id="what">    
+      <h1>What you'll learn</h1>        
+      <br>
+        
+      <ul>
+          <li>
+              <h3>
+              Modular learning sections & 10 real world projects with pure JavaScript
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>            
+              Asynchronous programming with Ajax, Fetch API, Promises & Async / Await
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3 style="padding-bottom: 50px;">            
+              Learn JavaScript Patterns
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>                  
+              Master the DOM (document object model) WITHOUT jQuery
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3 style="padding-bottom: 20px;">                 
+              OOP including ES5 prototypes & ES2015 classes
+              </h3>
+          </li>
+          <br>
+
+          <li>
+              <h3>                  
+              Regular expressions, error handling, localStorage & more
+              </h3>
+          </li>
+        </ul>
+        
+    </div>
+      <br><br><br>
+      <div style="padding-left: 450px; font-size: 40px;" >Course Content</div>
+      <br>
+      
+      <div id = "accordion-2">
+          
+          LESSON 1
+          
+         <h3>Intro & Getting Started</h3>
+         <div>
+            <ul>
+               <li>Welcome To The Course</li>
+               <li>Project Files & Questions</li>
+               <li>Projects Github Repo</li>
+               <li>Visual Studio Code Setup</li>
+            </ul>
+         </div>
+         <h3>Javascript Language Fundamentals</h3>
+         <div>
+            <ul>
+               <li>Section Intro & File Setup</li>
+               <li>Using The Console</li>
+               <li>Variables - var, let & const</li>
+               <li>Data Types in JavaScript</li>
+               <li>Type Conversion</li>
+               <li>Numbers & The Math Object</li>
+               <li>String Methods & Concatenation</li>
+               <li>Template Literals</li>
+               <li>Arrays & Array Methods</li>
+               <li>Object Literals</li>
+               <li>Dates & Times</li>
+               <li>If Statements & Comparison Operators</li>
+               <li>Switches</li>
+               <li>Function Declarations & Expressions</li>
+               <li>General Loops</li>
+               <li>A Look At The Window Object</li>
+               <li>Block Scope With let & const</li>
+             </ul>
+         </div>
+          
+          LESSON 2
+          
+         <h3>DOM Manipulation & Events</h3>
+         <div>
+            <ul>
+               <li>What Is The DOM?</li>
+               <li>Examining The Document Object</li>
+               <li>DOM Selectors For Single Elements</li>
+               <li>DOM Selectors For Multiple Elements</li>
+               <li>Traversing The DOM</li>
+               <li>Creating Elements</li>
+               <li>Removing & Replacing Elements</li>
+               <li>Event Listeners & The Event Object</li>
+               <li>Mouse Events</li>
+               <li>Keyboard & Input Events</li>
+               <li>Event Bubbling & Delegation</li>
+               <li>Local & Session Storage</li>
+             </ul>
+         </div>
+          
+          LESSON 3
+          
+          <h3>DOM Projects</h3>
+         <div>
+              <li>Task List [Part 1] - UI & Add Task Items</li>
+              <li>Task List [Part 2] - Delete & Filter Tasks</li>
+              <li>Task List [Part 3] - Persist To Local Storage</li>
+              <li>Loan Calculator [Part 1] - Build The UI</li>
+              <li>Loan Calculator [Part 2] - Calculate & Error</li>
+              <li>Loan Calculator [Part 3] - Loader & User Experience</li>
+              <li>Number Guesser [Part 1] - Build The UI</li>
+              <li>Number Guesser [Part 2] - Validation & Winning Case</li>
+              <li>Number Guesser [Part 3] - Lose Case & Game Over</li>
+              <li>Number Guesser [Part 4] - Play Again</li>
+         </div>
+          
+          LESSON 4
+          
+          <h3>Object Oriented Javascript - ES5 & ES 2015</h3>
+         <div>
+             <li>Constructors & the 'this' Keyword</li>
+             <li>Built In Constructors</li>
+             <li>Prototypes Explained</li>
+             <li>Prototypal Inheritance</li>
+             <li>Using Object.create</li>
+             <li>ES6 Classes</li>
+             <li>Sub Classes</li>
+         </div>
+          
+          LESSON 5
+          
+          <h3>OOP Book List Project</h3>
+         <div>
+             <li>Build The Book List UI</li>
+             <li>Add Book To List</li>
+             <li>Validation & Alert</li>
+             <li>Delete Book From List</li>
+             <li>Convert to ES6 Classes</li>
+             <li>Bonus - Add Local Storage</li>
+         </div>
+          
+         LESSON 6
+          
+          <h3>Asynchronous Javascript, Ajax & Fetch API</h3>
+         <div>
+             <li>What Is Asynchronous Programming?</li>
+             <li>Ajax & XHR Introduction</li>
+             <li>XHR Object Methods & Working With Text</li>
+             <li>Working With Ajax & JSON</li>
+             <li>Data From an External API - Chuck Norris Project</li>
+             <li>REST APIs & HTTP Requests</li>
+             <li>Callback Functions</li>
+             <li>Custom HTTP Library (Ajax With Callbacks) - Part 1</li>
+             <li>Custom HTTP Library (Ajax With Callbacks) - Part 2</li>
+             <li>ES6 Promises</li>
+             <li>The Fetch API</li>
+             <li>Error Handling With Fetch</li>
+             <li>Arrow Functions</li>
+             <li>Custom HTTP Library (Fetch With Promises) - Part 3</li>
+             <li>Async & Await</li>
+             <li>Custom HTTP Library (Fetch With Async Await) - Part 4</li>
+         </div>
+          
+          LESSON 7
+          
+          <h3>API Projects</h3>
+         <div>
+             <li>Github Finder [Part 1] - Intro & UI</li>
+             <li>Github Finder [Part 2] - Fetching Profile Data</li>
+             <li>Github Finder [Part 3] - Display The Profile Data</li>
+             <li>Github Finder [Part 4] - Show Alert Message</li>
+             <li>Github Finder [Part 5] - Fetch & Display Repos</li>
+             <li>WeatherJS [Part 1] - Intro & UI</li>
+             <li>WeatherJS [Part 2] - Fetch Weather From API</li>
+             <li>WeatherJS [Part 3] - Display The Weather</li>
+             <li>WeatherJS [Part 4] - Save Location To Local Storage</li>
+         </div>
+          
+          LESSON 8
+          
+          <h3>Error Handling & Regular Expressions</h3>
+         <div>
+             <li>Error Handling with Try...Catch</li>
+             <li>Regular Expressions [Part 1] - Evaluation Functions</li>
+             <li>Regular Expressions [Part 2] - Metacharacter Symbols</li>
+             <li>Regular Expressions [Part 3] - Character Sets & Quantifiers</li>
+             <li>Regular Expressions [Part 4] - Shorthand Character Classes</li>
+             <li>Regular Expressions - Form Validation Project</li>
+         </div>
+          
+          LESSON 9
+          
+          <h3>Other Newer Features - ES2015+</h3>
+         <div>
+             <li>Iterators & Generators</li>
+             <li>Profile Scroller - Iterator Mini Project</li>
+             <li>Symbols</li>
+             <li>Destructuring</li>
+             <li>ES6 Maps</li>
+             <li>ES6 Sets</li>
+         </div>
+          
+          LESSON 10
+          
+          <h3>JavaScript Patterns</h3>
+         <div>
+             <li>What Are Patterns?</li>
+             <li>Module & Revealing Module Pattern</li>
+             <li>Singleton Pattern </li>
+             <li>Factory Pattern</li>
+             <li>Observer Pattern</li>
+             <li>Mediator Pattern</li>
+             <li>State Pattern - Small Project</li>
+         </div>
+          
+          LESSON 11
+          
+          <h3>Tracalorie Project (Using The Module Pattern)</h3>
+         <div>
+             <li>Project Introduction/li>
+             <li>Creating The UI With Materialize CSS</li>
+             <li>Controllers & Data Structure</li>
+             <li>Get & Populate Items</li>
+             <li>Add Item To Data Structure</li>
+             <li>Add Item To The UI</li>
+             <li>Add Total Calories</li>
+             <li>Working With The Edit State</li>
+             <li>Updating Items & Total Calories</li>
+             <li>Delete & Clear Items</li>
+             <li>Add & Get From Local Storage</li>
+             <li>Delete & Clear From Local Storage</li>
+         </div>
+          
+          LESSON 12
+          
+          <h3>Microposts Project - CRUD Front End (Webpack & Babel)</h3>
+         <div>
+             <li>Babel & Webpack Environment Setup</li>
+             <li>Intro To ES2015 Modules</li>
+             <li>Create The UI</li>
+             <li>Create a fake REST API Using JSON Server</li>
+             <li>Get & Display Posts</li>
+             <li>Add Posts & Show Alert</li>
+             <li>Removing Posts</li>
+             <li>Post Edit State & Update [1]</li>
+             <li>Post Edit State & Update [2]</li>
+         </div>
+          <h3>Wrap Up</h3>
+         <div>
+             <li>Wrap Up & Where To Go From Here</li>
+          </div>
+             
+         </div> 
+              <br><br><br>
+              <div style="padding-left: 450px; font-size: 40px;" >Requirements</div>
+              <div id="requirements" >
+              <br>        
+                  <p><li style="list-style: initial;">Basic HTML / CSS knowledge</li></p>
+              </div>
+              <br><br><br>
+                              
+              <div style="padding-left: 450px; font-size: 40px;">Description</div>
+              <div id="description" >
+              <br>
+                  <p>This is a front to back JavaScript course for<b style="font-weight: 1000; font-style: italic;">absolutely everybody</b>. We start with the basic fundamentals and work our way to advanced programming WITHOUT relying on frameworks or libraries at all. You will learn a ton of pure JavaScript, whether you are a beginner or an established JS programmer. There is something for everyone...</p>
+              </div>
+              <br><br><br>
+                              
+              <div style="padding-left: 450px; font-size: 20px;">#### WHATS INCLUDED? ####</div>
+              <div id="whatincluded" >
+              <br>         
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">Basics & Fundamentals:</li></p>
+                  <p style="padding-left: 20px;">Data types, let & const variables, functions, conditionals, loops, object literals, arrays, etc.</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">DOM Manipulation:</li></p>
+                  <p style="padding-left: 20px;">Selectors, traversing the DOM, show/hide, creating & removing elements, event listeners</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">OOP:</li></p>
+                  <p style="padding-left: 20px;">ES5 prototypes, inheritance, ES2015 classes & sub-classes, constructors</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">Async JS:</li></p>
+                  <p style="padding-left: 20px;">Ajax & XHR, Fetch API, callbacks, promises, async / await</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">ES2015+:</li></p>
+                  <p style="padding-left: 20px;">Arrow functions, template strings, generators, iterators, maps & sets, symbols & more</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">JavaScript Patterns:</li></p>
+                  <p style="padding-left: 20px;">Module, Factory, State, Observer, Mediator, Singleton</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">Other:</li></p>
+                  <p style="padding-left: 20px;">Local & session storage, regular expressions, try/catch error handling</p>
+                  <br>
+                  
+                  <p><li style="font-size: 17px; font-weight: 700; list-style: initial;">10 Projects of all kinds</li></p>
+              </div>
+              <br><br><br>
+                              
+              <div style="padding-left: 450px; font-size: 20px; font-style: italic;">#### PROJECTS ####<</div>
+              <div id="projects" >
+              <br>
+                 <p>
+                     1. Task List With Local Storage
+                     <br>
+                     
+                     2. Loan Calculator
+                     <br>
+                     
+                     3. Number Guess Game
+                     <br>
+                     
+                     4. OOP Book Listing App (ES5 Prototype & ES2015 Classes Version)
+                     <br>
+                     
+                     5. Chuck Norris Joke Generator
+                     <br>
+                     
+                     6. EasyHTTP - Custom HTTP Library (3 Versions - Callbacks / Promises / Async & Await)
+                     <br>
+                     
+                     7. Github Finder
+                     <br>
+                     
+                     8. WeatherJS App
+                     <br>
+                     
+                     9. Calorie Tracker (Module Pattern)
+                     <br>
+                     
+                     10. Microposts - Frontend CRUD for REST API (Webpack & Babel)
+                 </p>
+              </div>
+              <br><br><br>
+                  
+              <div style="padding-left: 450px; font-size: 20px;">Ready to get started, developer?</div>
+              <br>
+
+              <p style="padding-left: 450px;">Enrol now using the “Register” button below, and get started on your way to creative Modern JavaScript. 
+              </p>
+              <br><br><br>
+      
+              <div style="padding-left: 450px; font-size: 30px;">Who this course is for:</div>
+              <br>
+                <div id="who">
+                    <p><li style="list-style: initial;">People that want to learn modern JavaScript from beginner to advanced without libraries and frameworks.</li></p>   
+                </div>
+              <br><br><br>
+          
+               <button id = "toggle3" style="margin-left: 620px; color: green; background-color: deepskyblue; height: 50px; width: 600px;"  href="#">REGISTER</button>
+               <div id = "register" title = "REGISTER">
+               Thank you. You are now registered to JavaScript course!
+               </div>
+               <br><br><br>
+
+              <button style="background-color: deepskyblue; height: 50px; width: 600px; margin-left: 620px;"><a href="course-schedule2.html">See Course Schedule</a></button> 
+          </div>
+  </main>
+    </body>
+    <!-- footer -->
+    <footer class="site-footer" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle2">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tab-about">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!--external javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.menu-aim.js"></script> 
+    <script src="js/index-main.js"></script>
+    <!--end of external javascript-->
+
+
+</html>

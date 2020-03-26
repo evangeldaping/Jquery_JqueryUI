@@ -1,0 +1,75 @@
+  body {     
+  height: 100%; 
+  line-height: 1.4em;
+  margin: 0px;
+  }
+
+  #header {
+  height: 120px;
+  background-color: #81a0ee;
+  }    
+
+
+.javascript {
+	height:200px;
+	background-color: #25253a;
+	color: white;
+	padding-top: 60px;
+	font-size: 40px;
+	padding-left: 450px;
+    padding-right: 450px;
+}
+
+#what {
+    column-count: 2;
+	width:1000px;
+	height: 250px;
+	border-color: black;
+	background-color: #eee8e9;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#what ul {
+   margin-left: 30px; 
+}
+
+#what ul li {   
+    list-style: initial;      
+}
+
+#what h1 {
+	font-size: 30px;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+#what h3 {
+	padding-left: 40px;
+	padding-right: 30px;
+}
+
+
+#requirements {
+    padding-left: 450px;
+}
+
+#description {
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+#whatincluded {
+    padding-left: 450px;
+}
+
+#projects {
+    padding-left: 450px;
+}
+
+#who {
+    padding-left: 450px;
+}

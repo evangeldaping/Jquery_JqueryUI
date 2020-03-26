@@ -1,0 +1,64 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+body, html {
+  margin: 0 auto;
+  height: 100%;   
+  width: 100%; 
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* end of html */
+
+/*--------------------------------------*/
+
+/* end of content */
+
+#header {
+  height: 120px;
+  background-color: #81a0ee;
+ }
+
+ .contentWrapper{
+  margin: 0 auto;
+}
+
+.contentWrapper section {
+  text-align: inherit;
+  margin: 0px 400px 0px 310px;
+  padding-bottom: 90px;
+  background-color: white;
+  width: 900px;
+}
+
+.contentWrapper h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  background: -moz-linear-gradient(-45deg, #4280f1 0%, #4feecb 100%);
+  background: -webkit-linear-gradient(-45deg, #4280f1 0%, #4feecb 100%);
+  background: linear-gradient(135deg, #4280f1 0%, #4feecb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4280f1', endColorstrt='#4feecb', GradientType=1);
+
+}
+
+.contentWrapper h2 {
+  text-align: left;
+  font-size: 30px;
+}
+
+.contentWrapper h3 {
+  font-size: 20px;
+  color: black;
+}
+
+/* end of content */
+

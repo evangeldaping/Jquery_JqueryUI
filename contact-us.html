@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content=" This is the Contact Us Page where it contains a form by which a visitor uses to sends his/her information like full name, email address, phone and messages to the company.">
+    
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css"> 
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-us.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css">
+    <!--end of external css-->
+
+    <!--external jquery-->
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+    <!-- jQuery-Javascript -->
+
+    <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"  
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    <!--for jqueryUI - Dialog-->
+    <script type = "text/javascript">
+        $(function() {
+
+            $("#toggle1").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+
+            $("#toggle2").click(function() {
+               ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+         });
+    </script>
+
+  </head>
+ 
+  <body>
+    <!--header-->
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+          <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li class="see-all" ><a id = "toggle1" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>    
+            
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>  
+  </header>
+    <!--end of header-->
+
+    <!--contact form-->
+    <div class="contact1">
+      <div class="container-contact1">
+        <form class="contact1-form validate-form">
+          <span class="contact1-form-title">
+            Get in touch
+          </span>
+
+          <div class="wrap-input1 validate-input" data-validate = "Full Name is required">
+            <input class="input1" type="text" name="name" placeholder="Full Name">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Phone Number is required">
+            <input id="txtChar" onpaste="return false" onkeypress="return isNumberKey(event)" class="input1" type="text" name="txtChar" placeholder="Phone Number">
+            <span class="shadow-input1"></span>
+          </div>
+          
+          <div class="wrap-input1 validate-input" data-validate = "Valid email is required, example: abc_learningcenter@gmail.com">
+            <input class="input1" type="text" name="email" placeholder="Email Address">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+            <input class="input1" type="text" name="subject" placeholder="Subject">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Message is required">
+            <textarea class="input1" name="message" placeholder="Message"></textarea>
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn">
+              <span>
+                Send Email
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--end of contact form-->
+    
+    <!-- footer -->
+    <footer class="site-footer" style="margin-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle2">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!--external javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.menu-aim.js"></script> 
+    <script src="js/index-main.js"></script>
+    <script src="js/contact.js"></script>
+    <!--end of external javascript-->
+
+  </body>
+ </html>

@@ -1,0 +1,847 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Course Schedule Page for Advance Web Development where it shows the time allotment for the course.">
+
+    <title>ABC Learning Center</title>
+
+    <!--external css-->
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/course-schedule2.css">
+    <link rel = "stylesheet" href = "css/jquery-ui.css">
+    <!--end of external css-->
+    
+    <!--jQuery Script-->
+    <script src = "js/jquery-1.10.2.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+      
+    <!--internal CSS-->
+    <style>
+        #accordion-2{
+             font-size: 14px;
+             width: 500px;
+          }
+    </style>
+
+    <!--for for jqueryUI - Autocomplete-->
+       <script>
+         $(function() {
+            var Course = [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"  
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:1,   
+               delay:500,   
+               source: Course
+            });
+         });
+      </script>
+      
+    <!-- Javascript -->
+    <!--for jqueryUI - Accordion-->
+    <script>
+        $(function() {
+        $( "#accordion-1" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+       <script>
+        $(function() {
+        $( "#accordion-2" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+    <script>
+        $(function() {
+        $( "#accordion-3" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-4" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-5" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-6" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-7" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-8" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-9" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-10" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-11" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+      
+     <script>
+        $(function() {
+        $( "#accordion-12" ).accordion({
+            collapsible: true
+        });
+    });
+    </script>
+
+    <!-- Javascript -->
+    <!--for jqueryUI - Dialog-->
+      <script type = "text/javascript">
+         $(function() {
+             
+            $("#toggle1").click(function() {
+               ($("#seeothercoursesmenu").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesmenu").dialog("open") : $("#seeothercoursesmenu").dialog("close") ;
+            });
+            $("#seeothercoursesmenu").dialog({autoOpen: false});
+
+            $("#toggle2").click(function() {
+               ($("#seeothercoursesfooter").dialog("isOpen") == false) ? $(
+                  "#seeothercoursesfooter").dialog("open") : $("#seeothercoursesfooter").dialog("close") ;
+            });
+            $("#seeothercoursesfooter").dialog({autoOpen: false});
+             
+            $("#lesson1toggle").click(function() {
+               ($("#lesson1").dialog("isOpen") == false) ? $(
+                  "#lesson1").dialog("open") : $("#lesson1").dialog("close") ;
+            });
+            $("#lesson1").dialog({autoOpen: false});
+             
+            $("#lesson2toggle").click(function() {
+               ($("#lesson2").dialog("isOpen") == false) ? $(
+                  "#lesson2").dialog("open") : $("#lesson2").dialog("close") ;
+            });
+            $("#lesson2").dialog({autoOpen: false});
+             
+             
+            $("#lesson3toggle").click(function() {
+               ($("#lesson3").dialog("isOpen") == false) ? $(
+                  "#lesson3").dialog("open") : $("#lesson3").dialog("close") ;
+            });
+            $("#lesson3").dialog({autoOpen: false});
+             
+             
+            $("#lesson4toggle").click(function() {
+               ($("#lesson4").dialog("isOpen") == false) ? $(
+                  "#lesson4").dialog("open") : $("#lesson4").dialog("close") ;
+            });
+            $("#lesson4").dialog({autoOpen: false});
+             
+             
+            $("#lesson5toggle").click(function() {
+               ($("#lesson5").dialog("isOpen") == false) ? $(
+                  "#lesson5").dialog("open") : $("#lesson5").dialog("close") ;
+            });
+            $("#lesson5").dialog({autoOpen: false});
+             
+             
+            $("#lesson6toggle").click(function() {
+               ($("#lesson6").dialog("isOpen") == false) ? $(
+                  "#lesson6").dialog("open") : $("#lesson6").dialog("close") ;
+            });
+            $("#lesson6").dialog({autoOpen: false});
+             
+             
+            $("#lesson7toggle").click(function() {
+               ($("#lesson7").dialog("isOpen") == false) ? $(
+                  "#lesson7").dialog("open") : $("#lesson7").dialog("close") ;
+            });
+            $("#lesson7").dialog({autoOpen: false});
+             
+             
+            $("#lesson8toggle").click(function() {
+               ($("#lesson8").dialog("isOpen") == false) ? $(
+                  "#lesson8").dialog("open") : $("#lesson8").dialog("close") ;
+            });
+            $("#lesson8").dialog({autoOpen: false});
+             
+             
+            $("#lesson9toggle").click(function() {
+               ($("#lesson9").dialog("isOpen") == false) ? $(
+                  "#lesson9").dialog("open") : $("#lesson9").dialog("close") ;
+            });
+            $("#lesson9").dialog({autoOpen: false});
+             
+             
+            $("#lesson10toggle").click(function() {
+               ($("#lesson10").dialog("isOpen") == false) ? $(
+                  "#lesson10").dialog("open") : $("#lesson10").dialog("close") ;
+            });
+            $("#lesson10").dialog({autoOpen: false});
+             
+             
+            $("#lesson11toggle").click(function() {
+               ($("#lesson11").dialog("isOpen") == false) ? $(
+                  "#lesson11").dialog("open") : $("#lesson11").dialog("close") ;
+            });
+            $("#lesson11").dialog({autoOpen: false});
+             
+             
+            $("#lesson12toggle").click(function() {
+               ($("#lesson12").dialog("isOpen") == false) ? $(
+                  "#lesson12").dialog("open") : $("#lesson12").dialog("close") ;
+            });
+            $("#lesson12").dialog({autoOpen: false});
+         });
+      </script>
+
+    </head>
+  <body>
+    <header id="header">
+
+      <a class="cd-dropdown-trigger" style="margin-left: 100px; padding-top: 20px;" href="#0"><img src="images/ABClogo.png" alt="ABC Learning Center Logo"></a> 
+       
+      <div class="cd-dropdown-wrapper">
+      <nav class="cd-dropdown">
+        <h2>ABC Learning Center</h2>
+        <a href="#0" class="cd-close">Close</a>
+        <ul class="cd-dropdown-content">
+          <li>
+            <form class="cd-search ui-widget">
+              <input id="automplete-3" type="search" placeholder="Search...">
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+
+            <li class="has-children">
+            <a href="#">Course</a>
+
+            <ul class="cd-dropdown-gallery is-hidden">
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li class="see-all" ><a id = "toggle1" href="#">See other Courses</a></li>
+              <div id = "seeothercoursesmenu" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>            
+             
+              <li>
+                <a class="cd-dropdown-item" href="course-details1.html">
+                  <img src="images/java.jpg" alt="course 1">
+                </a>
+              </li>
+
+              <li>
+                <a class="cd-dropdown-item" href="course-details2.html">
+                  <img src="images/javascript.jpeg" alt="course 2">
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          
+        </ul>
+      </nav>
+    </div>  
+  </header>
+
+  <main>
+
+    <div class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table100 ver1">
+          <div class="table100-firstcol" style="text-align: center;">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">COURSE CONTENT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 1</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 2</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 3</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 4</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 5</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 6</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 7</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 8</td>
+                </tr>
+                  
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 9</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 11</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1" style="padding-top: 20px;">LESSON 12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="wrap-table100-nextcols js-pscroll" style="text-align: center;">
+            <div class="table100-nextcols">
+              <table>
+                <thead>
+                  <tr class="row100 head">
+                    <th class="cell100 column2">Class Type</th>
+                    <th class="cell100 column3">Topics</th>                    
+                    <th class="cell100 column4">Faculty</th>
+                    <th class="cell100 column5"># of Hrs</th>
+                    <th class="cell100 column6">Date</th>
+                    <th class="cell100 column7"># of Days</th>
+                    <th class="cell100 column8">Time</th>
+                    <th class="cell100 column9">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="row100 body">   
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson1toggle">Browse Here</a></button>
+                      <div id = "lesson1" title = "Lesson 1 - Topics">                       
+                       <div id = "accordion-1">
+                         <h3>Intro & Getting Started</h3>
+                         <div>
+                            <ul>
+                               <li>Welcome To The Course</li>
+                               <li>Project Files & Questions</li>
+                               <li>Projects Github Repo</li>
+                               <li>Visual Studio Code Setup</li>
+                            </ul>
+                         </div>
+                         <h3>Javascript Language Fundamentals</h3>
+                         <div>
+                            <ul>
+                               <li>Section Intro & File Setup</li>
+                               <li>Using The Console</li>
+                               <li>Variables - var, let & const</li>
+                               <li>Data Types in JavaScript</li>
+                               <li>Type Conversion</li>
+                               <li>Numbers & The Math Object</li>
+                               <li>String Methods & Concatenation</li>
+                               <li>Template Literals</li>
+                               <li>Arrays & Array Methods</li>
+                               <li>Object Literals</li>
+                               <li>Dates & Times</li>
+                               <li>If Statements & Comparison Operators</li>
+                               <li>Switches</li>
+                               <li>Function Declarations & Expressions</li>
+                               <li>General Loops</li>
+                               <li>A Look At The Window Object</li>
+                               <li>Block Scope With let & const</li>
+                            </ul>
+                         </div>
+                      </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">(START of class) March 3, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson2toggle">Browse Here</a></button>
+                    <div id = "lesson2" title = "Lesson 2 - Topics">                       
+                       <div id = "accordion-2">
+                         <h3>DOM Manipulation & Events</h3>
+                         <div>
+                               <li>What Is The DOM?</li>
+                               <li>Examining The Document Object</li>
+                               <li>DOM Selectors For Single Elements</li>
+                               <li>DOM Selectors For Multiple Elements</li>
+                               <li>Traversing The DOM</li>
+                               <li>Creating Elements</li>
+                               <li>Removing & Replacing Elements</li>
+                               <li>Event Listeners & The Event Object</li>
+                               <li>Mouse Events</li>
+                               <li>Keyboard & Input Events</li>
+                               <li>Event Bubbling & Delegation</li>
+                               <li>Local & Session Storage</li>
+                        </div>                       
+                      </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 5, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                 <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson3toggle">Browse Here</a></button>
+                    <div id = "lesson3" title = "Lesson 3 - Topics">                       
+                       <div id = "accordion-3">
+                         <h3>DOM Projects</h3>
+                         <div>
+                              <li>Task List [Part 1] - UI & Add Task Items</li>
+                              <li>Task List [Part 2] - Delete & Filter Tasks</li>
+                              <li>Task List [Part 3] - Persist To Local Storage</li>
+                              <li>Loan Calculator [Part 1] - Build The UI</li>
+                              <li>Loan Calculator [Part 2] - Calculate & Error</li>
+                              <li>Loan Calculator [Part 3] - Loader & User Experience</li>
+                              <li>Number Guesser [Part 1] - Build The UI</li>
+                              <li>Number Guesser [Part 2] - Validation & Winning Case</li>
+                              <li>Number Guesser [Part 3] - Lose Case & Game Over</li>
+                              <li>Number Guesser [Part 4] - Play Again</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 7, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson4toggle">Browse Here</a></button>
+                    <div id = "lesson4" title = "Lesson 4 - Topics">                       
+                       <div id = "accordion-4">
+                         <h3>Object Oriented Javascript - ES5 & ES 2015</h3>
+                         <div>
+                             <li>Constructors & the 'this' Keyword</li>
+                             <li>Built In Constructors</li>
+                             <li>Prototypes Explained</li>
+                             <li>Prototypal Inheritance</li>
+                             <li>Using Object.create</li>
+                             <li>ES6 Classes</li>
+                             <li>Sub Classes</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">A.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 10, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                 <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson5toggle">Browse Here</a></button>
+                    <div id = "lesson5" title = "Lesson 5 - Topics">                       
+                       <div id = "accordion-5">
+                         <h3>OOP Book List Project</h3>
+                         <div>
+                             <li>Generics Introduction</li>
+                             <li>Our Generics Class</li>
+                             <li>Our Generics Class Part 2</li>
+                             <li>Our Generics Class Part 3</li>
+                             <li>Generics Challenge</li>
+                         </div>
+                         <h3>Naming Conventions and Packages, static and final keywords</h3>
+                         <div>
+                             <li>Build The Book List UI</li>
+                             <li>Add Book To List</li>
+                             <li>Validation & Alert</li>
+                             <li>Delete Book From List</li>
+                             <li>Convert to ES6 Classes</li>
+                             <li>Bonus - Add Local Storage</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 12, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">         
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson6toggle">Browse Here</a></button>
+                    <div id = "lesson6" title = "Lesson 6 - Topics">                       
+                       <div id = "accordion-6">
+                         <h3>Asynchronous Javascript, Ajax & Fetch API</h3>
+                         <div>
+                             <li>What Is Asynchronous Programming?</li>
+                             <li>Ajax & XHR Introduction</li>
+                             <li>XHR Object Methods & Working With Text</li>
+                             <li>Working With Ajax & JSON</li>
+                             <li>Data From an External API - Chuck Norris Project</li>
+                             <li>REST APIs & HTTP Requests</li>
+                             <li>Callback Functions</li>
+                             <li>Custom HTTP Library (Ajax With Callbacks) - Part 1</li>
+                             <li>Custom HTTP Library (Ajax With Callbacks) - Part 2</li>
+                             <li>ES6 Promises</li>
+                             <li>The Fetch API</li>
+                             <li>Error Handling With Fetch</li>
+                             <li>Arrow Functions</li>
+                             <li>Custom HTTP Library (Fetch With Promises) - Part 3</li>
+                             <li>Async & Await</li>
+                             <li>Custom HTTP Library (Fetch With Async Await) - Part 4</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 14, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson7toggle">Browse Here</a></button>
+                    <div id = "lesson7" title = "Lesson 7 - Topics">                       
+                       <div id = "accordion-7">
+                         <h3>API Projects</h3>
+                         <div>
+                             <li>Github Finder [Part 1] - Intro & UI</li>
+                             <li>Github Finder [Part 2] - Fetching Profile Data</li>
+                             <li>Github Finder [Part 3] - Display The Profile Data</li>
+                             <li>Github Finder [Part 4] - Show Alert Message</li>
+                             <li>Github Finder [Part 5] - Fetch & Display Repos</li>
+                             <li>WeatherJS [Part 1] - Intro & UI</li>
+                             <li>WeatherJS [Part 2] - Fetch Weather From API</li>
+                             <li>WeatherJS [Part 3] - Display The Weather</li>
+                             <li>WeatherJS [Part 4] - Save Location To Local Storage</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>                    
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 17, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                   <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson8toggle">Browse Here</a></button>
+                    <div id = "lesson8" title = "Lesson 8 - Topics">                       
+                       <div id = "accordion-8">
+                         <h3>Error Handling & Regular Expressions</h3>
+                         <div>
+                             <li>Error Handling with Try...Catch</li>
+                             <li>Regular Expressions [Part 1] - Evaluation Functions</li>
+                             <li>Regular Expressions [Part 2] - Metacharacter Symbols</li>
+                             <li>Regular Expressions [Part 3] - Character Sets & Quantifiers</li>
+                             <li>Regular Expressions [Part 4] - Shorthand Character Classes</li>
+                             <li>Regular Expressions - Form Validation Project</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">B.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 19, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+                    
+                    <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson9toggle">Browse Here</a></button>
+                    <div id = "lesson9" title = "Lesson 9 - Topics">                       
+                       <div id = "accordion-9">
+                         <h3>Other Newer Features - ES2015+</h3>
+                         <div>
+                             <li>Iterators & Generators</li>
+                             <li>Profile Scroller - Iterator Mini Project</li>
+                             <li>Symbols</li>
+                             <li>Destructuring</li>
+                             <li>ES6 Maps</li>
+                             <li>ES6 Sets</li>
+                         </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 21, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">         
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson10toggle">Browse Here</a></button>
+                    <div id = "lesson10" title = "Lesson 10 - Topics">                       
+                       <div id = "accordion-10">
+                         <h3>JavaScript Patterns</h3>
+                         <div>
+                             <li>What Are Patterns?</li>
+                             <li>Module & Revealing Module Pattern</li>
+                             <li>Singleton Pattern </li>
+                             <li>Factory Pattern</li>
+                             <li>Observer Pattern</li>
+                             <li>Mediator Pattern</li>
+                             <li>State Pattern - Small Project</li>
+                         </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 24, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                  <tr class="row100 body">
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson11toggle">Browse Here</a></button>
+                    <div id = "lesson11" title = "Lesson 11 - Topics">                       
+                       <div id = "accordion-11">
+                          <h3>Tracalorie Project (Using The Module Pattern)</h3>
+                             <div>
+                                 <li>Project Introduction/li>
+                                 <li>Creating The UI With Materialize CSS</li>
+                                 <li>Controllers & Data Structure</li>
+                                 <li>Get & Populate Items</li>
+                                 <li>Add Item To Data Structure</li>
+                                 <li>Add Item To The UI</li>
+                                 <li>Add Total Calories</li>
+                                 <li>Working With The Edit State</li>
+                                 <li>Updating Items & Total Calories</li>
+                                 <li>Delete & Clear Items</li>
+                                 <li>Add & Get From Local Storage</li>
+                                 <li>Delete & Clear From Local Storage</li>
+                             </div>
+                        </div>
+                    </div>
+                    </td>                    
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 26, 2020</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                   <tr class="row100 body">                    
+                    <td class="cell100 column2">eLearning</td>
+                    <td class="cell100 column3"><button class="see-all" style="background-color: #e9e9cf; height: 25px; width: 150px; border-radius: 10px 10px 10px 10px;" ><a id = "lesson12toggle">Browse Here</a></button>
+                    <div id = "lesson12" title = "Lesson 12 - Topics">                       
+                       <div id = "accordion-12">
+                          <h3>Microposts Project - CRUD Front End (Webpack & Babel)</h3>
+                             <div>
+                                 <li>Babel & Webpack Environment Setup</li>
+                                 <li>Intro To ES2015 Modules</li>
+                                 <li>Create The UI</li>
+                                 <li>Create a fake REST API Using JSON Server</li>
+                                 <li>Get & Display Posts</li>
+                                 <li>Add Posts & Show Alert</li>
+                                 <li>Removing Posts</li>
+                                 <li>Post Edit State & Update [1]</li>
+                                 <li>Post Edit State & Update [2]</li>
+                             </div>  
+                              <h3>Wrap Up</h3>
+                             <div>
+                                 <li>Wrap Up & Where To Go From Here</li>
+                             </div>         
+                        </div>
+                    </div>
+                    </td>
+                    <td class="cell100 column4">C.</td>
+                    <td class="cell100 column5">7</td>
+                    <td class="cell100 column6">March 28, 2020 (END of class)</td>
+                    <td class="cell100 column7">1</td>
+                    <td class="cell100 column8">1:00pm - 7:00pm</td>
+                    <td class="cell100 column9">www.courses.abclearningcenter.com</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+    <!-- footer -->
+    <footer class="site-footer" style="margin-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="aboutwrapper">
+            <h6>About</h6>
+            <p class="text-justify"><i>ABC LEARNING CENTER </i> is an IT Training institute that conducts courses like 'Programming in Java', 'Programming in .Net', 'Microsoft Office', 'HTML' etc.</p>
+          </div>
+
+          <div class="categorieswrapper">
+            <h6>Course</h6>
+            <ul class="footer-links">
+              <li><a href="course-details1.html">Java</a></li>
+              <li><a href="course-details2.html">JavaScript</a></li>
+              <li class="see-all" ><a id = "toggle2">See other Courses</a></li>
+              <div id = "seeothercoursesfooter" title = "see other courses">
+                Nothing to show at the meantime.
+              </div>
+            </ul>
+          </div>
+
+          <div class="linkswrapper">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tab-about">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <br><br><br>
+      <hr>
+      <br>
+
+      <div class="copyrightwrapper">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="index.html">ABC Learning Center</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+  <script>
+    $('.js-pscroll').each(function(){
+      var ps = new PerfectScrollbar(this);
+
+      $(window).on('resize', function(){
+        ps.update();
+      })
+
+      $(this).on('ps-x-reach-start', function(){
+        $(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+      });
+
+      $(this).on('ps-scroll-x', function(){
+        $(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+      });
+
+    });   
+  </script>
+
+  <!--external javascript-->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="js/schedule.js"></script>   
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.menu-aim.js"></script> 
+  <script src="js/index-main.js"></script>
+  <!--end of external javascript-->
+
+  </body>
+</html>
